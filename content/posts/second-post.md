@@ -2,6 +2,13 @@
 date = 2026-06-15
 draft = false
 title = 'Hugo 디렉토리 구조'
+
+categories = ['Git']
+
+tags = [
+  'Hugo',
+  'GitHub Pages'
+]
 +++
 
 ## 🏗️ 휴고(Hugo) 블로그 구조 한눈에 보기

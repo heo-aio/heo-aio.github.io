@@ -2,6 +2,15 @@
 date = 2026-06-17
 draft = false
 title = '운영체제 핵심 개념 정리 - 프로세스(Process)와 메모리 구조(면접대비)'
+
+categories = ['CS']
+
+tags = [
+  '운영체제',
+  'Process',
+  '메모리구조',
+  'OS'
+]
 +++
 
 # 🔄 운영체제 핵심 개념 정리 - 프로세스(Process)와 메모리 구조

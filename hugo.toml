@@ -3,3 +3,61 @@ languageCode = "ko-kr"
 title = "heo_99의 블로그"
 
 theme = "PaperMod"
+
+[pagination]
+pagerSize = 10
+
+[params]
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+
+[params.homeInfoParams]
+Title = "안녕하세요 👋"
+Content = "AI 개발자 취업 준비 과정과 CS 공부 기록, 프로젝트 경험을 정리하는 기술 블로그입니다."
+
+#################
+# 메뉴
+#################
+
+[[menu.main]]
+identifier = "cs"
+name = "CS"
+url = "/categories/cs/"
+weight = 10
+
+[[menu.main]]
+identifier = "sql"
+name = "SQL"
+url = "/categories/sql/"
+weight = 20
+
+[[menu.main]]
+identifier = "ai"
+name = "AI"
+url = "/categories/ai/"
+weight = 30
+
+[[menu.main]]
+identifier = "git"
+name = "Git"
+url = "/categories/git/"
+weight = 40
+
+[[menu.main]]
+identifier = "troubleshooting"
+name = "Troubleshooting"
+url = "/categories/troubleshooting/"
+weight = 50
+
+#################
+# Taxonomies
+#################
+
+[taxonomies]
+category = "categories"
+tag = "tags"

@@ -1,9 +1,20 @@
-# 🛠️ Hugo + GitHub Pages 배포 삽질기: "테마가 안 바뀌어요!" 해결 일지
 +++
 date = 2026-06-16
 draft = false
-title = 'Hugo 트러블 슈팅 일지'
+title = 'Hugo + GitHub Pages 배포 삽질기 : PaperMod 테마가 적용되지 않았던 이유'
+
+categories = ['Troubleshooting']
+
+tags = [
+  'Hugo',
+  'Git',
+  'GitHub',
+  'GitHub Pages',
+  'GitHub Actions'
+]
 +++
+
+# 🛠️ Hugo + GitHub Pages 배포 삽질기: "테마가 안 바뀌어요!" 해결 일지
 
 최근 Hugo로 블로그를 이전하면서 테마를 Stack에서 PaperMod로 변경하는 과정에서 겪은 고난과 역경을 기록한다.
 

@@ -1,7 +1,15 @@
 +++
+title = 'Hugo 블로그 구축기'
 date = 2026-06-13
 draft = false
-title = 'Hugo 블로그 구축기'
+
+categories = ['Git']
+
+tags = [
+  'Hugo',
+  'Git',
+  'GitHub Pages'
+]
 +++
 
 # 🚀 우여곡절 끝에 완성한 나만의 블로그!
