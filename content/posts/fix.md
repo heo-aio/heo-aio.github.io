@@ -7,7 +7,6 @@ categories = ['Troubleshooting']
 
 tags = [
   'Hugo',
-  'Git',
   'GitHub',
   'GitHub Pages',
   'GitHub Actions'

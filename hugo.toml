@@ -20,39 +20,15 @@ ShowToc = true
 Title = "안녕하세요 👋"
 Content = "AI 개발자 취업 준비 과정과 CS 공부 기록, 프로젝트 경험을 정리하는 기술 블로그입니다."
 
-#################
-# 메뉴
-#################
-
 [[menu.main]]
-identifier = "cs"
-name = "CS"
-url = "/categories/cs/"
+name = "Categories"
+url = "/categories/"
 weight = 10
 
 [[menu.main]]
-identifier = "sql"
-name = "SQL"
-url = "/categories/sql/"
+name = "Tags"
+url = "/tags/"
 weight = 20
-
-[[menu.main]]
-identifier = "ai"
-name = "AI"
-url = "/categories/ai/"
-weight = 30
-
-[[menu.main]]
-identifier = "git"
-name = "Git"
-url = "/categories/git/"
-weight = 40
-
-[[menu.main]]
-identifier = "troubleshooting"
-name = "Troubleshooting"
-url = "/categories/troubleshooting/"
-weight = 50
 
 #################
 # Taxonomies

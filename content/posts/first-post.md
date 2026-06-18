@@ -7,8 +7,8 @@ categories = ['Git']
 
 tags = [
   'Hugo',
-  'Git',
-  'GitHub Pages'
+  'GitHub Pages',
+  'Git'
 ]
 +++
 
