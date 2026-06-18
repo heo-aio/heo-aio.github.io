@@ -36,8 +36,8 @@ cd .\heo_blog\
 GitHub에 코드를 업로드하기 위해 로컬 환경에 사용자 정보를 등록했다.
 
 ```powershell
-git config --global user.email "ppp978597@gmail.com"
-git config --global user.name "HeoJungMo1"
+git config --global user.email "yourEmail@gmail.com"
+git config --global user.name "Honggilldong"
 ```
 
 > ⚠️ 삽질 포인트
