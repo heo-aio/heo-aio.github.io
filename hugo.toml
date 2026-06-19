@@ -16,9 +16,28 @@ ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
 ShowToc = true
 
-[params.homeInfoParams]
-Title = "안녕하세요 👋"
-Content = "AI 개발자 취업 준비 과정과 CS 공부 기록, 프로젝트 경험을 정리하는 기술 블로그입니다."
+#################
+# 프로필 (홈 화면)
+#################
+[params.profileMode]
+enabled = true
+title = "heo_99"
+subtitle = "AI 개발자 취업 준비 | CS / SQL / AI 정리"
+imageUrl = "images/zzangu.jpg"
+imageWidth = 150
+imageHeight = 150
+
+[[params.profileMode.buttons]]
+name = "Categories"
+url = "/categories/"
+
+[[params.profileMode.buttons]]
+name = "Tags"
+url = "/tags/"
+
+#################
+# 메뉴
+#################
 
 [[menu.main]]
 name = "Categories"
