@@ -21,7 +21,12 @@ ShowToc = true
 #################
 [params.homeInfoParams]
 Title = "heo_99"
-Content = "AI 개발자 취업 준비 | CS / SQL / AI 정리"
+Content = """
+<img src="/images/zzangu.jpg" width="160" style="border-radius: 50%;" />
+
+AI 개발자 취업 준비 | CS / SQL / AI 정리
+"""
+
 
 #################
 # 소셜 링크
@@ -35,8 +40,9 @@ url = "https://github.com/heo-aio"
 name = "link"
 url = "https://app.notion.com/p/Project-352bca91a4b98010beaef9641b01051c"
 
-[params.profileMode]
-imageUrl = "images/zzangu.jpg"
+[[params.socialIcons]]
+name = "email"
+url = "mailto:ppp978597@gmail.com"
 
 #################
 # 메뉴
