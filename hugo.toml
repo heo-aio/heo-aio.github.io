@@ -17,23 +17,26 @@ ShowCodeCopyButtons = true
 ShowToc = true
 
 #################
-# 프로필 (홈 화면)
+# 홈 화면 (기본 블로그형)
 #################
+[params.homeInfoParams]
+Title = "heo_99"
+Content = "AI 개발자 취업 준비 | CS / SQL / AI 정리"
+
+#################
+# 소셜 링크
+#################
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/heo-aio"
+
+[[params.socialIcons]]
+name = "link"
+url = "https://app.notion.com/p/Project-352bca91a4b98010beaef9641b01051c"
+
 [params.profileMode]
-enabled = true
-title = "heo_99"
-subtitle = "AI 개발자 취업 준비 | CS / SQL / AI 정리"
 imageUrl = "images/zzangu.jpg"
-imageWidth = 150
-imageHeight = 150
-
-[[params.profileMode.buttons]]
-name = "Categories"
-url = "/categories/"
-
-[[params.profileMode.buttons]]
-name = "Tags"
-url = "/tags/"
 
 #################
 # 메뉴
