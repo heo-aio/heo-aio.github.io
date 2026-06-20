@@ -1,5 +1,5 @@
 +++
-title = "SQL 집합 연산자와 계층형 질의 정리 공부일지"
+title = "SQL JOIN(심화) 공부일지"
 date = 2026-06-19
 draft = false
 tags = ["SQL", "Database", "면접준비"]
