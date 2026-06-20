@@ -1,3 +1,11 @@
++++
+title = "SQL 집합 연산자와 계층형 질의 정리 공부일지"
+date = 2026-06-19
+draft = false
+tags = ["SQL", "Database", "면접준비"]
+categories = ["SQL"]
++++
+
 ## 📚 SQL JOIN 정리
 
 데이터베이스를 공부하다 보면 가장 많이 만나게 되는 개념 중 하나가 JOIN이다.
