@@ -477,7 +477,7 @@ GROUP BY J.NAME
 
 ---
 
-# 🚀 반복하자
+# 🚀 반복하자!!
 
 * OVER()가 나오면 윈도우 함수
 * PARTITION BY = 그룹 나누기
