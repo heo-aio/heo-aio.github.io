@@ -302,8 +302,28 @@ SELECT
     score,
     PERCENT_RANK() OVER (ORDER BY score) AS percent_rank
 FROM student;
-순위를 백분율로 표현한다.
 ```
+순위를 백분율로 표현한다.
+
+### 예시
+
+학생들의 점수를 기준으로 `PERCENT_RANK()`를 계산해보자.
+
+| name | score |
+|------|------:|
+| 김철수 | 70 |
+| 이영희 | 80 |
+| 박민수 | 90 |
+| 최지훈 | 100 |
+
+```sql
+SELECT
+    name,
+    score,
+    PERCENT_RANK() OVER (ORDER BY score) AS percent_rank
+FROM student;
+```
+
 ---
 
 ## 🔹 CUME_DIST
@@ -323,25 +343,6 @@ SELECT ID,
            4
        )
 FROM EMPLOYEE;
-```
-
-### 예시
-
-학생들의 점수를 기준으로 `PERCENT_RANK()`를 계산해보자.
-
-| name | score |
-|------|------:|
-| 김철수 | 70 |
-| 이영희 | 80 |
-| 박민수 | 90 |
-| 최지훈 | 100 |
-
-```sql
-SELECT
-    name,
-    score,
-    PERCENT_RANK() OVER (ORDER BY score) AS percent_rank
-FROM student;
 ```
 
 ### 실행 결과
