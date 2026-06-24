@@ -47,41 +47,10 @@ url = "mailto:ppp978597@gmail.com"
 #################
 # 메뉴
 #################
-
 [[menu.main]]
-name = "SQL"
-url = "/categories/sql/"
+name = "Categories"
+url = "/categories/"
 weight = 10
-
-[[menu.main]]
-name = "OS"
-url = "/categories/os/"
-weight = 20
-
-[[menu.main]]
-name = "Network"
-url = "/categories/network/"
-weight = 30
-
-[[menu.main]]
-name = "AI"
-url = "/categories/ai/"
-weight = 40
-
-[[menu.main]]
-name = "DataAnalysis"
-url = "/categories/dataanalysis/"
-weight = 40
-
-[[menu.main]]
-name = "Blog"
-url = "/categories/blog/"
-weight = 40
-
-[[menu.main]]
-name = "Project"
-url = "/categories/project/"
-weight = 50
 
 [[menu.main]]
 name = "Tags"

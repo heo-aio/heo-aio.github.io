@@ -2,8 +2,8 @@
 title = "SQL 집합 연산자와 계층형 질의 정리"
 date = 2026-06-19T00:00:00+09:00
 draft = false
-tags = ["SQL", "Database", "면접준비"]
-categories = ["SQL"]
+tags = ["SQL", "Database"]
+categories = ["sql"]
 +++
 
 # 📚 SQL 집합 연산자와 계층형 질의 정리

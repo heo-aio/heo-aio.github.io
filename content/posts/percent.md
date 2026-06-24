@@ -2,7 +2,7 @@
 title = "데이터 분석을 위해 알아야 할 통계 기초 맛보기"
 date = 2026-06-22T00:00:00+09:00
 draft = false
-tags = ["Statistics", "DataAnalysis", "Python", "면접준비"]
+tags = ["Statistics", "DataAnalysis", "Python"]
 categories = ["DataAnalysis"]
 +++
 

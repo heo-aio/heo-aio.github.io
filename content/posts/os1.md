@@ -3,7 +3,7 @@ date = 2026-06-17
 draft = false
 title = '운영체제 핵심 개념 정리 - 프로세스(Process)와 메모리 구조'
 
-categories = ['OS']
+categories = ["OS", "CS"]
 
 tags = [
 '운영체제',

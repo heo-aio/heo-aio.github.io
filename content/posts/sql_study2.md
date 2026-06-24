@@ -2,8 +2,8 @@
 title = "SQL JOIN(심화) 공부일지"
 date = 2026-06-19
 draft = false
-tags = ["SQL", "Database", "면접준비"]
-categories = ["SQL"]
+tags = ["SQL", "Database"]
+categories = ["sql"]
 +++
 
 ## 📚 SQL JOIN 정리
