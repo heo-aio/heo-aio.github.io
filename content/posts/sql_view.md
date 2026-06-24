@@ -3,7 +3,7 @@ title = "SQL VIEW(뷰) 정리"
 date = 2026-06-20
 draft = false
 tags = ["SQL", "Database", "CS", "면접준비"]
-categories = ["CS"]
+categories = ["SQL"]
 +++
 
 # SQL VIEW(뷰) 정리

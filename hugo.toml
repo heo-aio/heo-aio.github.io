@@ -17,8 +17,9 @@ ShowCodeCopyButtons = true
 ShowToc = true
 
 #################
-# 홈 화면 (기본 블로그형)
+# 홈 화면
 #################
+
 [params.homeInfoParams]
 Title = "heo_99"
 Content = """
@@ -26,7 +27,6 @@ Content = """
 
 AI 개발자 취업 준비 | CS / SQL / AI 정리
 """
-
 
 #################
 # 소셜 링크
@@ -49,14 +49,44 @@ url = "mailto:ppp978597@gmail.com"
 #################
 
 [[menu.main]]
-name = "Categories"
-url = "/categories/"
+name = "SQL"
+url = "/categories/sql/"
 weight = 10
+
+[[menu.main]]
+name = "OS"
+url = "/categories/os/"
+weight = 20
+
+[[menu.main]]
+name = "Network"
+url = "/categories/network/"
+weight = 30
+
+[[menu.main]]
+name = "AI"
+url = "/categories/ai/"
+weight = 40
+
+[[menu.main]]
+name = "DataAnalysis"
+url = "/categories/dataanalysis/"
+weight = 40
+
+[[menu.main]]
+name = "Blog"
+url = "/categories/blog/"
+weight = 40
+
+[[menu.main]]
+name = "Project"
+url = "/categories/project/"
+weight = 50
 
 [[menu.main]]
 name = "Tags"
 url = "/tags/"
-weight = 20
+weight = 60
 
 #################
 # Taxonomies

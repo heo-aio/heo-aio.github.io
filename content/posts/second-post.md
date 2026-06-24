@@ -3,7 +3,7 @@ date = 2026-06-15
 draft = false
 title = 'Hugo 디렉토리 구조'
 
-categories = ['Git']
+categories = ['blog']
 
 tags = [
   'Hugo',

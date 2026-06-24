@@ -3,7 +3,7 @@ title = 'Hugo 블로그 구축기'
 date = 2026-06-13
 draft = false
 
-categories = ['Git']
+categories = ['blog']
 
 tags = [
   'Hugo',

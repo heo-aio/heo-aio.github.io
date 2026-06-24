@@ -3,7 +3,7 @@ title = "SQL 서브쿼리(SubQuery) 정리 공부일지"
 date = 2026-06-20
 draft = false
 tags = ["SQL", "Database", "CS", "면접준비"]
-categories = ["CS"]
+categories = ["SQL"]
 +++
 
 # SQL 서브쿼리(SubQuery) 정리

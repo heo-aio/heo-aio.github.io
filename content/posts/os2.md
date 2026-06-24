@@ -3,7 +3,7 @@ date = 2026-06-17
 draft = false
 title = '운영체제 핵심 개념 정리 - 프로세스 상태 전이, IPC, 스케줄링'
 
-categories = ['CS']
+categories = ['OS']
 
 tags = [
 '운영체제',

@@ -3,7 +3,7 @@ date = 2026-06-16
 draft = false
 title = 'Hugo + GitHub Pages 배포 삽질기 : PaperMod 테마가 적용되지 않았던 이유'
 
-categories = ['Troubleshooting']
+categories = ['blog']
 
 tags = [
   'Hugo',

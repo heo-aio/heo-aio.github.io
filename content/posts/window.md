@@ -185,11 +185,43 @@ FROM EMPLOYEE;
 
 ---
 
-## 🔹 FIRST_VALUE
+## 🔹 FIRST_VALUE()
 
 가장 먼저 나온 값을 반환한다.
 
+```sql
+SELECT
+    NAME,
+    DEPARTMENT_ID,
+    SALARY,
+    FIRST_VALUE(SALARY)
+    OVER(
+        PARTITION BY DEPARTMENT_ID
+        ORDER BY SALARY ASC
+    ) AS MIN_SALARY
+FROM EMPLOYEE;
+```
+
+### 예시 데이터
+
+| 이름 | 부서 | 급여 |
+|------|------|------|
+| 김철수 | 개발팀 | 3000 |
+| 이영희 | 개발팀 | 5000 |
+| 박민수 | 개발팀 | 4000 |
+
+### 결과
+
+| 이름 | 부서 | 급여 | MIN_SALARY |
+|------|------|------|------------|
+| 김철수 | 개발팀 | 3000 | 3000 |
+| 박민수 | 개발팀 | 4000 | 3000 |
+| 이영희 | 개발팀 | 5000 | 3000 |
+
+즉, 같은 부서 내에서 가장 작은 급여를 모든 행에 함께 표시한다.
+
 ---
+
 
 ## 🔹 LAST_VALUE
 
@@ -687,6 +719,23 @@ GROUPING SETS
 아직 직접 사용할 기회는 많지 않았지만 SQLD나 데이터 분석 면접에서도 자주 등장하는 개념인 만큼 주기적으로 복습할 필요가 있을 것 같다.
 
 ---
+
+# 📚 윈도우 함수 한눈에 보기
+
+| 함수 | 역할 |
+|--------|--------|
+| RANK | 순위 |
+| DENSE_RANK | 연속 순위 |
+| ROW_NUMBER | 고유 번호 |
+| AVG OVER | 그룹 평균 |
+| SUM OVER | 누적합 |
+| FIRST_VALUE | 첫 값 |
+| LAST_VALUE | 마지막 값 |
+| LAG | 이전 행 |
+| LEAD | 다음 행 |
+| PERCENT_RANK | 순위 백분율 |
+| CUME_DIST | 누적 백분율 |
+| NTILE | 그룹 분할 |
 
 # 🚀 반복하자!!
 
