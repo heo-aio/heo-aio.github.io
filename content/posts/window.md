@@ -3,7 +3,7 @@ title = "SQL 윈도우 함수와 그룹 함수 정리"
 date = 2026-06-21T00:00:00+09:00
 draft = false
 tags = ["SQL", "Database"]
-categories = ["SQL"]
+categories = ["sql"]
 +++
 
 # 📚 SQL 윈도우 함수(Window Function)와 그룹 함수(Group Function) 정리
