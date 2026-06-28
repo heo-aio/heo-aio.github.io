@@ -16,11 +16,8 @@ categories = ["db"]
 
 Windows 환경에서 MySQL을 설치하는 방법은 크게 두 가지가 있다.
 
-- **MySQL Installer**를 이용하여 설치
-MySQL 공식문서 링크 : https://dev.mysql.com/downloads/installer/
-
-- **Chocolatey**와 같은 패키지 매니저를 이용하여 설치
-chocolatey 링크 : https://chocolatey.org/install
+- **[MySQL Installer](https://dev.mysql.com/downloads/installer/)** 를 이용하여 설치
+- **[Chocolatey](https://chocolatey.org/install)** 와 같은 패키지 매니저를 이용하여 설치
 
 일반적으로는 공식 홈페이지에서 제공하는 **MySQL Installer**를 이용하는 방법을 많이 사용한다.
 
