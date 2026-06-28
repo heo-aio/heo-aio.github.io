@@ -21,7 +21,11 @@ CREATE DATABASE shared_kickboard;
 
 USE shared_kickboard;
 ```
-![테이블생성 결과](images/db/create_db.png)
+### 💻 DB생성 결과
+
+![DB 생성](/images/db/create_db.png)
+
+> `SHOW DATABASES;`를 실행하여 생성된 DB확인가능
 ---
 
 # 📋 테이블 설계
@@ -63,6 +67,15 @@ CREATE TABLE customer(
 
 ---
 
+### 💻 TABLE 생성
+
+![TABLE 생성](/images/db/create_table_c.png)
+![TABLE 구조](/images/db/DESC_c.png)
+
+> `SHOW TABLES;`를 실행하여 생성된 TABLE확인가능
+> `DESC customer;` 로 테이블 구조 확인
+
+
 ## 🏢 Brand 테이블
 
 킥보드 브랜드 정보를 저장한다.
@@ -74,6 +87,10 @@ CREATE TABLE brand(
     company VARCHAR(20) NOT NULL
 );
 ```
+
+### 💻 TABLE 생성
+
+![TABLE 생성](/images/db/create_table_b.png)
 
 ---
 
@@ -92,6 +109,10 @@ CREATE TABLE kickboard(
         REFERENCES brand(brand_number)
 );
 ```
+### 💻 TABLE 생성
+
+![TABLE 생성](/images/db/create_table_k.png)
+
 
 ### 💡 설계 포인트
 
@@ -123,6 +144,14 @@ CREATE TABLE borrow(
 );
 ```
 
+### 💻 TABLE 생성
+
+![TABLE 생성](/images/db/create_table_borrow.png)
+
+### 💻 생성한 TABLE 보기
+
+![TABLE](/images/db/show_table.png)
+
 ### 💡 설계 포인트
 
 - 회원번호와 대여시간을 **복합 기본키(Composite Primary Key)** 로 사용하였다.
@@ -144,6 +173,10 @@ VALUES('0012616925','이서연','flykite','HASH-u73ylz5jao','21865059766','1995-
 INSERT INTO customer
 VALUES('0187642351','김민준','kmax6','HASH-lui235dfi2','08786173448','1989-03-09');
 ```
+
+### 💻 데이터 삽입
+
+![INSERT TO TABLE](/images/db/insert.png)
 
 ---
 
@@ -228,6 +261,10 @@ ON c.customer_number = b.customer_number;
 |김민준|대여|
 |김민준|반납|
 
+### 💻 borrow 테이블과 customer 테이블 조인 후 대여정보 출력
+
+![SELECT](/images/db/select_borrow.png)
+
 ---
 
 ## 특정 회사의 킥보드 조회
@@ -272,6 +309,9 @@ GRANT SELECT
 ON shared_kickboard.*
 TO jm@localhost;
 ```
+### 💻 사용자 생성 및 SELECT권한부여 예시
+
+![grant](/images/db/user_grant.png)
 
 ---
 
@@ -280,6 +320,9 @@ TO jm@localhost;
 ```sql
 SHOW GRANTS FOR jm@localhost;
 ```
+### 💻 권한 확인 이미지
+
+![show_grant](/images/db/show_grant.png)
 
 ---
 
@@ -290,6 +333,10 @@ REVOKE SELECT
 ON shared_kickboard.*
 FROM jm@localhost;
 ```
+
+### 💻 권한 회수 후 확인
+
+![show_grant](/images/db/revoke.png)
 
 ---
 
@@ -339,6 +386,11 @@ FROM customer;
 ALTER TABLE customer
 DROP INDEX customer_index;
 ```
+
+### 💻 인덱스 생성 및 삭제
+
+![index](/images/db/create_index_drop_index.png)
+
 
 ### 💡 언제 인덱스를 사용할까?
 
