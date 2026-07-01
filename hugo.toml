@@ -15,8 +15,6 @@ ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
 ShowToc = true
-math = true
-enableMath = true
 
 #################
 # 홈 화면
