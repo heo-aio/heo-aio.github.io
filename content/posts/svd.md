@@ -4,6 +4,7 @@ date = 2026-07-01T15:30:00+09:00
 draft = false
 tags = ["Machine Learning", "Linear Algebra", "SVD", "PCA", "Python"]
 categories = ["ml"]
+math = true
 +++
 
 머신러닝을 공부하다 보면 **회귀 분석(Linear Regression)** 이나 **주성분 분석(PCA)** 을 학습하는 과정에서 **다중공선성(Multicollinearity)** 과 **특이값 분해(SVD, Singular Value Decomposition)** 라는 개념을 자주 접하게 된다.
