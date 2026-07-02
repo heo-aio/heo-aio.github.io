@@ -5,7 +5,7 @@ title = "heo_99의 블로그"
 theme = "PaperMod"
 
 [pagination]
-pagerSize = 10
+pagerSize = 5
 
 [params]
 defaultTheme = "auto"
