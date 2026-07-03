@@ -1,6 +1,6 @@
 +++
-title = "[ML] Kaggle Taxi Fare 데이터로 배우는 데이터 전처리와 EDA (1) - 결측치, 이상치, 상관관계 분석"
-date = 2026-07-04
+title = "[ML] Kaggle Taxi Fare 데이터로 배우는 데이터 전처리와 EDA - 결측치, 이상치, 상관관계 분석"
+date = 2026-07-03
 draft = false
 tags = ["Python", "Machine Learning", "Pandas", "EDA", "Data Preprocessing", "Kaggle"]
 categories = ["ml"]
@@ -12,7 +12,7 @@ categories = ["ml"]
 
 이번 글에서는 **Kaggle의 New York City Taxi Fare Prediction 데이터셋**을 활용하여 머신러닝 프로젝트에서 수행하는 데이터 전처리와 탐색적 데이터 분석(EDA) 과정을 실습한 내용을 정리해보았다.
 
-이번 글에서는 다음 내용을 다룬다.
+이번 글에서는 다음 내용을 다룰 것이다.
 
 - 데이터를 불러오는 과정
 - 결측치 처리

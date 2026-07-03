@@ -1,19 +1,16 @@
 +++
-title = "[ML] Kaggle Taxi Fare 데이터로 배우는 머신러닝 모델 학습 및 복습 (2) - Train/Test Split, StandardScaler, Pipeline"
+title = "[ML] 머신러닝 프로젝트 Process 학습 및 복습 - Train/Test Split, StandardScaler, Pipeline"
 date = 2026-07-04
 draft = false
 tags = ["Python", "Machine Learning", "Scikit-learn", "Pipeline", "StandardScaler", "Kaggle"]
 categories = ["ml"]
-math = true
 +++
 
-이전 글에서는 Kaggle의 **New York City Taxi Fare Prediction** 데이터셋을 이용하여
+앞서 Kaggle의 **New York City Taxi Fare Prediction** 데이터셋을 이용하여 아래의 과정까지 진행해보았다.
 
 - 결측치 처리
 - 이상치 제거
 - 상관관계 분석(EDA)
-
-까지 진행하였다.
 
 이번 글에서는 전처리가 완료된 데이터를 이용하여 실제 머신러닝 모델을 학습하기 위한 과정을 정리해보려고 한다.
 
@@ -23,7 +20,6 @@ math = true
 - 데이터 표준화(StandardScaler)
 - 모델 학습
 - Pipeline
-
 
 ---
 
@@ -216,9 +212,7 @@ X_test = scaler.transform(X_test)
 
 Scikit-learn에서는 대부분의 모델이 동일한 인터페이스를 제공한다.
 
-예를 들어
-
-Decision Tree를 사용한다면
+예를 들어 Decision Tree를 사용한다면,
 
 ```python
 from sklearn.tree import DecisionTreeRegressor
@@ -228,25 +222,19 @@ model = DecisionTreeRegressor(random_state=42)
 model.fit(X_train, y_train)
 ```
 
-`fit()`은
-
-훈련 데이터를 이용하여 모델을 학습시키는 과정이다.
+`fit()`은 훈련 데이터를 이용하여 모델을 학습시키는 과정이다.
 
 ---
 
 # 4️⃣ 예측(Predict)
 
-학습이 끝난 모델은
-
-새로운 데이터를 예측할 수 있다.
+학습이 끝난 모델은 새로운 데이터를 예측할 수 있다.
 
 ```python
 prediction = model.predict(X_test)
 ```
 
-`predict()`는
-
-처음 보는 데이터에 대한 예측 결과를 반환한다.
+`predict()`는 처음 보는 데이터에 대한 예측 결과를 반환한다.
 
 ---
 
@@ -274,17 +262,13 @@ print(mse)
 
 를 이용하여 평균제곱오차(MSE)를 계산할 수 있다.
 
-모델을 비교할 때는
-
-여러 평가 지표를 함께 확인하는 것이 중요하다.
+모델을 비교할 때는 여러 평가 지표를 함께 확인하는 것이 중요하다.
 
 ---
 
 # 6️⃣ Pipeline
 
-머신러닝 프로젝트에서는
-
-전처리 과정이 점점 많아진다.
+머신러닝 프로젝트에서는 전처리 과정이 점점 많아진다.
 
 예를 들어
 
