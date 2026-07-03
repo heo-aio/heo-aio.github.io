@@ -4,6 +4,7 @@ date = 2026-07-03
 draft = false
 tags = ["Python", "Scikit-learn", "Machine Learning", "Data Science"]
 categories = ["ml"]
+math = true
 +++
 
 머신러닝을 처음 공부하면 가장 많이 접하게 되는 라이브러리 중 하나가 **Scikit-learn(sklearn)** 이다.
