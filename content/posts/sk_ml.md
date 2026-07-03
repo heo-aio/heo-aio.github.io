@@ -664,23 +664,7 @@ Scikit-learn을 처음 접했을 때는 각 함수의 사용법만 익히면 된
 Scikit-learn은 머신러닝 프로젝트를 구현하기 위한 대표적인 라이브러리이다.
 각 알고리즘과 개념을 함께 학습하면 전체적인 머신러닝 흐름을 이해하는 데 도움이 될 것이다.
 
-### 머신러닝 기초
-
-- ✅ 머신러닝에서 미적분을 배우는 이유
-- ⏳ Gradient Descent 이해하기
-- ⏳ Decision Tree 원리
-- ⏳ Random Forest 이해하기
-- ⏳ Support Vector Machine(SVM)
-- ⏳ K-Nearest Neighbors(KNN)
 
 ### 데이터 전처리
+- ⏳ EDA
 
-- ⏳ StandardScaler와 MinMaxScaler 비교
-- ⏳ 결측치 처리(SimpleImputer)
-- ⏳ Feature Engineering 기초
-
-### 모델 평가 및 튜닝
-
-- ⏳ Accuracy, Precision, Recall, F1 Score
-- ⏳ Cross Validation
-- ⏳ GridSearchCV와 Hyperparameter Tuning
