@@ -80,7 +80,7 @@ Scikit-learn을 사용한 머신러닝 프로젝트는 일반적으로 아래와
 
 # 1️⃣ 데이터 분할: train_test_split
 
-머신러닝 모델을 학습하기 전에 가장 먼저 해야 하는 작업 중 하나가 **데이터를 훈련용과 테스트용으로 나누는 것**이다. :contentReference[oaicite:0]{index=0}
+머신러닝 모델을 학습하기 전에 가장 먼저 해야 하는 작업 중 하나가 **데이터를 훈련용과 테스트용으로 나누는 것**이다.
 
 ---
 
@@ -168,7 +168,7 @@ train_test_split()
 
 머신러닝에서는 각 변수의 단위가 크게 다르면
 
-모델이 특정 변수에 더 큰 영향을 받는 문제가 발생할 수 있다. :contentReference[oaicite:1]{index=1}
+모델이 특정 변수에 더 큰 영향을 받는 문제가 발생할 수 있다.
 
 이를 해결하기 위해 사용하는 것이 **StandardScaler**이다.
 
@@ -188,7 +188,7 @@ train_test_split()
 
 컴퓨터는 숫자의 크기만 보기 때문에 170이라는 값이 28보다 훨씬 중요하다고 오해할 수도 있다.
 
-이러한 영향을 줄이기 위해 각 변수의 평균을 0, 표준편차를 1로 맞추는 작업을 수행한다. :contentReference[oaicite:2]{index=2}
+이러한 영향을 줄이기 위해 각 변수의 평균을 0, 표준편차를 1로 맞추는 작업을 수행한다.
 
 ---
 
@@ -319,7 +319,7 @@ StandardScaler
 
 Scikit-learn에서는 다양한 머신러닝 알고리즘을 제공하는데,
 
-그중 가장 이해하기 쉬운 모델 중 하나가 **DecisionTreeClassifier(의사결정나무)** 이다. :contentReference[oaicite:0]{index=0}
+그중 가장 이해하기 쉬운 모델 중 하나가 **DecisionTreeClassifier(의사결정나무)** 이다.
 
 ---
 
@@ -458,9 +458,7 @@ StandardScaler
 
 위 처럼 여러 단계를 순서대로 수행해야 한다.
 
-이를 하나로 묶어주는 기능이
-
-**Pipeline**이다. :contentReference[oaicite:1]{index=1}
+이를 하나로 묶어주는 기능이 **Pipeline**이다.
 
 ---
 
@@ -499,11 +497,7 @@ pipeline.fit(X_train, y_train)
 prediction = pipeline.predict(X_test)
 ```
 
-Pipeline을 사용하면
-
-전처리부터 모델 학습,
-
-예측까지 하나의 객체에서 관리할 수 있다.
+Pipeline을 사용하면 전처리부터 모델 학습, 예측까지 하나의 객체에서 관리할 수 있다.
 
 ---
 
