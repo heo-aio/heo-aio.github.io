@@ -1,6 +1,6 @@
 +++
 title = "[ML] Kaggle Taxi Fare 데이터로 배우는 데이터 전처리와 EDA - 결측치, 이상치, 상관관계 분석"
-date = 2026-07-03
+date = 2026-07-05
 draft = false
 tags = ["Python", "Machine Learning", "Pandas", "EDA", "Data Preprocessing", "Kaggle"]
 categories = ["ml"]
