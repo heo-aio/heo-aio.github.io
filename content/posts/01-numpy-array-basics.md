@@ -13,7 +13,7 @@ AI 서비스 개발을 준비하면서, 모델을 붙이기 전에 데이터를 
 
 문법을 눈으로만 넘기지 않고 "왜 이렇게 동작하는가"를 따지면서 정리했고, 이 글에는 그중 특히 헷갈렸거나 중요하다고 느낀 개념을 담았다.
 
-> 📓 **실습 노트북 전체**: [다운로드 (.ipynb)](/notebooks/numpy-examples.ipynb) · [브라우저에서 보기 (nbviewer)](https://nbviewer.org/github/heo-aio/heo-aio.github.io/blob/main/static/notebooks/numpy-examples.ipynb)
+> 📓 **실습 노트북 전체**: [GitHub에서 보기](https://github.com/heo-aio/heo-aio.github.io/blob/main/static/notebooks/numpy-examples.ipynb) · [다운로드 (.ipynb)](/notebooks/numpy-examples.ipynb)
 >
 > 이 글은 아래 노트북 70문제 중 핵심만 추린 정리본이다. 전체 문제와 실행 결과는 노트북에서 볼 수 있다.
 
