@@ -1,6 +1,6 @@
 +++
 title = "[Data Analysis] NumPy 예제로 익히는 배열·축·브로드캐스팅"
-date = 2026-07-10
+date = 2026-06-28
 draft = false
 tags = ["Python", "NumPy", "Data Preprocessing", "EDA"]
 categories = ["data-analysis"]

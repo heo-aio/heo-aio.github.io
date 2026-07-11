@@ -1,6 +1,6 @@
 +++
 title = "[Data Analysis] Pandas 예제로 익히는 데이터 가공 (loc·iloc·groupby·merge)"
-date = 2026-07-10
+date = 2026-06-28
 draft = false
 tags = ["Python", "Pandas", "Data Preprocessing", "EDA"]
 categories = ["data-analysis"]
