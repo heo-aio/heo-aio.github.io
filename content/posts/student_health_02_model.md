@@ -12,7 +12,7 @@ categories = ["ml"]
 
 ---
 
-# 📌 이 단계의 흐름
+## 📌 이 단계의 흐름
 
 ```text
 변수 가지치기 (검증에서 죽은 변수 제거)
@@ -40,7 +40,7 @@ Pipeline 아키텍처 구성
 
 ---
 
-# 1️⃣ 변수 가지치기 — 많다고 좋은 게 아니다
+## 1️⃣ 변수 가지치기 — 많다고 좋은 게 아니다
 
 1편에서 파생변수를 잔뜩 만들었지만, MI와 리프트 검증 결과를 근거로 **실제로 도움이 된 변수만** 남겼다.
 
@@ -51,7 +51,7 @@ Pipeline 아키텍처 구성
 
 ---
 
-# 2️⃣ 인코딩 전략 — 순서가 있느냐 없느냐
+## 2️⃣ 인코딩 전략 — 순서가 있느냐 없느냐
 
 범주형 변수는 **값에 순서가 있는지**에 따라 인코딩을 다르게 적용했다.
 
@@ -64,7 +64,7 @@ Pipeline 아키텍처 구성
 
 ---
 
-# 3️⃣ Pipeline 아키텍처
+## 3️⃣ Pipeline 아키텍처
 
 전처리와 모델을 하나의 `Pipeline`으로 묶어, 12개 모델 앞에 **동일한 전처리기**를 붙였다.
 
@@ -81,7 +81,7 @@ preprocessor = ColumnTransformer([('num', numeric_pipe, num_final),
 
 ---
 
-# 4️⃣ 12개 모델 비교 — 계열별로 의도를 갖고 배치
+## 4️⃣ 12개 모델 비교 — 계열별로 의도를 갖고 배치
 
 "10개 이상 모델 비교"가 요건이었는데, 아무거나 채우지 않고 **계열별로 의도를 갖고** 배치했다.
 
@@ -123,7 +123,7 @@ preprocessor = ColumnTransformer([('num', numeric_pipe, num_final),
 
 ---
 
-# 5️⃣ 최종 모델 선택 — 기준을 세우고 고른다
+## 5️⃣ 최종 모델 선택 — 기준을 세우고 고른다
 
 선택 기준을 우선순위대로 정했다.
 
@@ -146,7 +146,7 @@ best params: {max_leaf_nodes: 31, max_iter: 500, learning_rate: 0.03, l2_regular
 
 ---
 
-# 6️⃣ 최종 검증 — 혼동행렬로 클래스별 성능 확인
+## 6️⃣ 최종 검증 — 혼동행렬로 클래스별 성능 확인
 
 전체 train을 80/20으로 나눠 hold-out 검증한 혼동행렬이다.
 
@@ -163,7 +163,7 @@ best params: {max_leaf_nodes: 31, max_iter: 500, learning_rate: 0.03, l2_regular
 
 ---
 
-# 7️⃣ 변수 중요도 — 예상이 빗나간 지점 🤔
+## 7️⃣ 변수 중요도 — 예상이 빗나간 지점 🤔
 
 마지막으로 선택 모델의 변수 중요도를 확인했는데, 여기서 예상과 다른 결과가 나왔다.
 
@@ -194,13 +194,13 @@ best params: {max_leaf_nodes: 31, max_iter: 500, learning_rate: 0.03, l2_regular
 
 ---
 
-# 📁 전체 코드
+## 📁 전체 코드
 
 👉 [student_health_02_모델비교_모델선택.ipynb 보기](https://github.com/heo-aio/heo-aio.github.io/blob/main/static/notebooks/student_health_02_%EB%AA%A8%EB%8D%B8%EB%B9%84%EA%B5%90_%EB%AA%A8%EB%8D%B8%EC%84%A0%ED%83%9D.ipynb)
 
 ---
 
-# 💡 공부하면서 느낀 점
+## 💡 공부하면서 느낀 점
 
 이번 단계에서 가장 인상 깊었던 건 **"성능만 보고 모델을 고르지 않는다"** 는 관점이었다.
 
