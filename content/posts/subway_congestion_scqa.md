@@ -56,7 +56,7 @@ H, p = stats.kruskal(*[group_by_hour[h] for h in range(24)])
 
 ### 📷 시간대별 승하차 인원 추이
 
-![시간대별 승하차 인원 추이](/images/subway/지하철혼잡도_시간대별승하차인원추이.png)
+![시간대별 승하차 인원 추이](/images/subway/시간대별승하차인원추이.png)
 
 ---
 
@@ -72,7 +72,7 @@ station_a['상대혼잡도'] = station_a['유동량'] / station_a['유동량'].m
 
 ### 📷 출퇴근 시간대 상위 10개 혼잡역
 
-![출퇴근 시간대 상위 10개 혼잡역](/images/subway/지하철혼잡도_출퇴근상위10개혼잡역.png)
+![출퇴근 시간대 상위 10개 혼잡역](/images/subway/출퇴근시간대상위10개혼잡역.png)
 
 ---
 
@@ -93,7 +93,7 @@ red_zone = station_a[station_a['상대혼잡도'] > RED_ZONE_THRESHOLD]
 
 ### 📷 승차·하차 핫스팟
 
-![승차 및 하차 핫스팟](/images/subway/지하철혼잡도_승하차핫스팟.png)
+![승차 및 하차 핫스팟](/images/subway/승차및하차핫스팟.png)
 
 ---
 
