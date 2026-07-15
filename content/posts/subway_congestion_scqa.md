@@ -3,7 +3,7 @@ title = "[프로젝트] 서울 지하철 혼잡도 분석 — SCQA로 안전자�
 date = 2026-06-26T10:00:00+09:00
 draft = false
 tags = ["Python", "Data Analysis", "공공데이터", "SCQA", "통계검정", "Folium", "팀프로젝트"]
-categories = ["analytics"]
+categories = ["Project"]
 math = true
 +++
 

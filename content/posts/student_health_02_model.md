@@ -3,7 +3,7 @@ title = "[프로젝트] 학생 건강상태 분류 (2/4) — 12개 모델 비교
 date = 2026-07-13T14:00:00+09:00
 draft = false
 tags = ["Python", "Machine Learning", "Kaggle", "Scikit-learn", "Pipeline", "모델선택", "팀프로젝트"]
-categories = ["ml"]
+categories = ["Project"]
 +++
 
 [지난 편](../student_health_01_eda/)에서는 EDA와 파생변수 설계를 다뤘다. 이번 편에서는 그렇게 만든 변수들을 가지고 **12개 분류 모델을 비교하고 최종 모델을 선택하는 과정**을 정리한다.

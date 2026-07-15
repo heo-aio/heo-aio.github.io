@@ -3,7 +3,7 @@ title = "[프로젝트] 학생 건강상태 분류 (4/4) — 스태킹 & 최종 
 date = 2026-07-14T14:00:00+09:00
 draft = false
 tags = ["Python", "Machine Learning", "Kaggle", "Stacking", "Optuna", "후처리", "팀프로젝트"]
-categories = ["ml"]
+categories = ["Project"]
 +++
 
 시리즈의 마지막 편이다. [3편](../student_health_03_ensemble/)에서 가중 앙상블로 balanced accuracy 약 **0.949**까지 왔고, 이번 편에서는 목표인 **0.952** 이상을 향해 성능을 끝까지 끌어올리는 실험들을 정리한다.

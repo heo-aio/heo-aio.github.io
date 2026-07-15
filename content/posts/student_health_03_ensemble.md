@@ -3,7 +3,7 @@ title = "[프로젝트] 학생 건강상태 분류 (3/4) — 부스팅 앙상블
 date = 2026-07-14T10:00:00+09:00
 draft = false
 tags = ["Python", "Machine Learning", "Kaggle", "Ensemble", "LightGBM", "XGBoost", "CatBoost", "팀프로젝트"]
-categories = ["ml"]
+categories = ["Project"]
 +++
 
 [2편](../student_health_02_model/)에서 단일 모델(HistGradientBoosting)을 골랐다. 이번 편에서는 **여러 부스팅 모델을 앙상블**해서 성능과 안정성이 더 좋아지는지 실험한 내용을 정리한다.

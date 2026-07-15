@@ -3,7 +3,7 @@ title = "[프로젝트] 학생 건강상태 분류 (1/4) — EDA & 파생변수 
 date = 2026-07-13T10:00:00+09:00
 draft = false
 tags = ["Python", "Machine Learning", "Kaggle", "EDA", "Feature Engineering", "통계검정", "팀프로젝트"]
-categories = ["ml"]
+categories = ["Project"]
 math = true
 +++
 
