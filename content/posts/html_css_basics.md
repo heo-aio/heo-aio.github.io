@@ -1,6 +1,6 @@
 +++
 title = "[HTML/CSS] 웹사이트의 정보와 디자인, 기초부터 정리"
-date = 2026-07-25
+date = 2026-07-25T10:00:00+09:00
 draft = false
 tags = ["HTML", "CSS", "웹개발", "프론트엔드"]
 categories = ["dev"]
@@ -21,9 +21,9 @@ math = false
 | CSS | 디자인 또는 스타일링 |
 | JavaScript | 기능과 효과 |
 
-강사님이 든 비유가 와닿았는데, 웹사이트 제작을 건물 짓기에 비유하면 HTML은 건물 설계도, CSS는 인테리어 디자인, JavaScript는 기능과 효과를 담당한다는 거다. 설계도 없이 인테리어부터 할 수 없듯, HTML 구조를 먼저 잡고 CSS로 꾸미는 순서가 자연스러운 이유가 있었다.
+세 언어를 층으로 쌓아서 생각하면 이해가 편했다. 가장 아래에 HTML이 구조를 잡고, 그 위에 CSS가 스타일을 입히고, 맨 위에서 JavaScript가 동작을 붙이는 순서. 구조 없이 스타일을 입힐 수 없듯, HTML을 먼저 잡고 CSS로 꾸미는 순서가 자연스러운 이유가 있었다.
 
-![HTML, CSS, JavaScript를 건물 짓기에 비유한 그림](/images/html_css/web-components-analogy.png)
+![HTML, CSS, JavaScript가 층층이 쌓여 웹페이지를 이루는 구조도](/images/html_css/web-layer-roles.png)
 
 웹사이트를 만들 때 고려해야 할 세 가지도 짚고 넘어갔다.
 
@@ -43,10 +43,10 @@ HTML은 Hyper Text Markup Language의 약자로, 웹사이트에서 눈에 보�
 <열린태그 속성 = "속성값"> 컨텐츠 </닫힌태그>
 ```
 
-- **태그명**: HTML이 갖고 있는 고유의 기능. `<열린태그></닫힌태그>` 형태로 입력
-- **컨텐츠**: 열린 태그와 닫힌 태그 사이에 있는 내용물
-- **속성**: HTML 태그가 갖고 있는 추가 정보
-- **속성값**: 어떤 역할을 수행할지 구체적인 명령을 내리는 것
+- **태그명**: HTML이 갖고 있는 고유의 기능. `<열린태그></닫힌태그>` 형태로 입력한다.
+- **컨텐츠**: 열린 태그와 닫힌 태그 사이에 있는 내용물.
+- **속성**: HTML 태그가 갖고 있는 추가 정보.
+- **속성값**: 어떤 역할을 수행할지 구체적인 명령을 내리는 것.
 
 ### HTML 문서의 기본 구조
 
@@ -61,6 +61,10 @@ HTML은 Hyper Text Markup Language의 약자로, 웹사이트에서 눈에 보�
 </body>
 </html>
 ```
+
+`<html>` 태그 안에 `<head>`와 `<body>`가 중첩되는 구조라고 생각하면 헷갈리지 않는다.
+
+![html 태그 안에 head와 body가 중첩되는 구조도](/images/html_css/html-document-structure.png)
 
 - `<!DOCTYPE html>`: HTML5라는 신조어로 문서를 선언하는 태그
 - `<html> … </html>`: HTML 문서의 시작과 끝. 모든 태그는 이 안에 입력
@@ -112,13 +116,13 @@ HTML은 Hyper Text Markup Language의 약자로, 웹사이트에서 눈에 보�
 
 ## 📚 구조를 잡을 때 사용하는 태그
 
-여기서부터는 페이지 전체의 큰 틀을 잡는 태그들이다. 책의 구조(목차 - 본문 - 부록)에 비유하면서 이해하려고 했다.
+여기서부터는 페이지 전체의 큰 틀을 잡는 태그들이다. 실제 웹페이지 레이아웃으로 와이어프레임을 그려보면 각 태그가 어느 영역을 담당하는지 한눈에 들어온다.
 
-![HTML 태그로 목차, 본문, 부록 영역을 구성한 예시](/images/html_css/html-tag-structure-example.png)
+![header, nav, main, article, footer 태그로 이루어진 웹페이지 와이어프레임](/images/html_css/page-layout-wireframe.png)
 
 ```html
-<header> <!-- 상단 영역: 목차 -->
-    <img src="elice_logo.png" alt="엘리스 로고">
+<header> <!-- 상단 영역 -->
+    <img src="logo.png" alt="로고">
     <nav> <!-- 메뉴 버튼 영역 -->
         <ul>
             <li>홈</li>
@@ -134,7 +138,7 @@ HTML은 Hyper Text Markup Language의 약자로, 웹사이트에서 눈에 보�
     </article>
 </main>
 
-<footer> <!-- 하단 영역: 부록 -->
+<footer> <!-- 하단 영역 -->
     <div>
         <p>주소: 대전광역시 유성구 문지로 193 KAIST</p>
     </div>
@@ -144,13 +148,9 @@ HTML은 Hyper Text Markup Language의 약자로, 웹사이트에서 눈에 보�
 - `<header>`: 웹사이트의 머리글을 담는 공간
 - `<nav>`: 메뉴 버튼을 담는 공간(navigation). `<ul>`, `<li>`, `<a>`와 함께 쓰임
 - `<main>`: 문서의 주요 내용을 담는 태그. Internet Explorer는 지원하지 않으므로 `role="main"` 속성을 꼭 넣어야 함
-- `<article>`: 문서의 주요 정보를 담고 구역을 설정하는 태그. 태그 내에 구역을 대표하는 `<h#>` 태그가 있어야 함
+- `<article>`: 문서의 주요 정보를 담고 구역을 설정하는 태그. 태그 내에 구역을 대표하는 `<h#>` 태그가 있어야 함. 위 그림처럼 `<main>` 하나 안에 `<article>`이 여러 개 들어갈 수 있음
 - `<footer>`: 가장 하단에 들어가는 정보를 표기할 때 사용
 - `<div>`: 임의의 공간을 만들 때 사용하는, 특별한 의미 없는 범용 컨테이너
-
-`<main>`과 `<article>`의 관계가 처음엔 좀 헷갈렸는데, 아래 그림처럼 `<main>` 안에 여러 `<article>`이 들어갈 수 있는 구조라고 생각하니 이해가 됐다.
-
-![main 태그 안에 여러 article 태그가 들어가는 구조](/images/html_css/main-article-diagram.png)
 
 ---
 
@@ -158,7 +158,7 @@ HTML은 Hyper Text Markup Language의 약자로, 웹사이트에서 눈에 보�
 
 태그는 출력될 때 성격이 두 가지로 나뉜다. 이 둘을 구분 짓는 특징은 줄바꿈 현상, 가로·세로 정렬, 상하 배치 가능 여부다.
 
-![Block 요소와 Inline 요소의 출력 형태 비교](/images/html_css/block-inline-example.png)
+![Block 요소는 세로로 쌓이고 Inline 요소는 한 줄에 나열되는 비교도](/images/html_css/block-vs-inline.png)
 
 ```html
 <!-- Block 요소: p 태그 -->
@@ -178,7 +178,7 @@ HTML은 Hyper Text Markup Language의 약자로, 웹사이트에서 눈에 보�
 
 ## 🎨 CSS, 정보와 디자인의 분리
 
-CSS는 Cascading Style Sheet의 약자로, HTML로 작성된 정보를 꾸며주는 언어다. 정보(HTML)와 디자인(CSS)을 분리해서 관리한다는 게 핵심 포인트
+CSS는 Cascading Style Sheet의 약자로, HTML로 작성된 정보를 꾸며주는 언어다. 정보(HTML)와 디자인(CSS)을 분리해서 관리한다는 게 핵심 포인트.
 
 ```
 선택자 { 속성 : 속성값; }
@@ -207,7 +207,7 @@ CSS는 Cascading Style Sheet의 약자로, HTML로 작성된 정보를 꾸며주
 </head>
 ```
 
-External 방식은 html, css 문서를 각각 따로 관리해서 상대적으로 가독성이 높고 유지보수가 쉽다는 장점이 있다. 실무에서는 거의 이 방식을 쓴다고한다.
+External 방식은 html, css 문서를 각각 따로 관리해서 상대적으로 가독성이 높고 유지보수가 쉽다는 장점이 있다. 실무에서는 거의 이 방식을 쓴다고.
 
 ---
 
@@ -215,7 +215,7 @@ External 방식은 html, css 문서를 각각 따로 관리해서 상대적으�
 
 선택자는 결국 "HTML의 어떤 요소에 CSS를 적용할 것인가"를 정하는 역할이다.
 
-![CSS 선택자가 HTML 요소를 가리키는 구조](/images/html_css/css-selector-diagram.png)
+![CSS 규칙의 선택자가 화살표로 특정 HTML 요소를 가리키는 개념도](/images/html_css/css-selector-concept.png)
 
 ```html
 <!-- Type Selector: 특정 태그에 적용 -->
@@ -257,15 +257,15 @@ CSS 선택자를 더 구체적으로 쓰고 싶을 때는 부모 태그를 함�
 header p { color: green; }
 ```
 
-이렇게 하면 `<footer>` 안의 `<p>`에는 영향을 주지 않고 `<header>` 안의 `<p>`에만 스타일이 적용된다. 원하는 영역에만 정확하게 CSS를 먹이고 싶을 때 유용한 방법
+이렇게 하면 `<footer>` 안의 `<p>`에는 영향을 주지 않고 `<header>` 안의 `<p>`에만 스타일이 적용된다. 원하는 영역에만 정확하게 CSS를 먹이고 싶을 때 유용한 방법.
 
 ---
 
 ## 🌊 캐스케이딩 — CSS 우선순위
 
-같은 요소에 여러 스타일이 겹칠 때 어떤 게 최종 적용될지를 결정하는 게 캐스케이딩이다. 우선순위를 결정하는 요소는 세 가지
+같은 요소에 여러 스타일이 겹칠 때 어떤 게 최종 적용될지를 결정하는 게 캐스케이딩이다. 우선순위를 결정하는 요소는 세 가지.
 
-![CSS 우선순위를 결정하는 순서, 디테일, 선택자 세 가지 요소](/images/html_css/css-cascading-priority.png)
+![CSS 우선순위를 결정하는 순서, 디테일, 선택자 세 단계 흐름도](/images/html_css/css-cascading-priority.png)
 
 **1. 순서** — 나중에 적용한 속성값의 우선순위가 높다.
 
@@ -299,7 +299,7 @@ h3 { color: green; }
 
 ## 🖌️ CSS 주요 속성
 
-마지막으로 오늘 배운 주요 속성들
+마지막으로 오늘 배운 주요 속성들.
 
 ```css
 .paragraph {
