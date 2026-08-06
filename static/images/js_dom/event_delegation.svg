@@ -1,0 +1,46 @@
+<svg viewBox="0 0 740 460" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="740" height="460" fill="#F9FAFB"/>
+  <text x="30" y="35" font-size="17" font-weight="700" fill="#1F2937">이벤트 위임 - 자식 4개 대신 부모 1개에만 이벤트를 건다</text>
+
+  <!-- BAD: 4 listeners -->
+  <rect x="30" y="65" width="320" height="330" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="50" y="95" font-size="14" font-weight="700" fill="#991B1B">각 자식마다 등록 (번거로움)</text>
+  <g font-size="12" fill="#991B1B">
+    <rect x="55" y="115" width="270" height="34" rx="6" fill="#FFFFFF" stroke="#DC2626"/>
+    <text x="65" y="137">div.brown.addEventListener(...)</text>
+    <rect x="55" y="157" width="270" height="34" rx="6" fill="#FFFFFF" stroke="#DC2626"/>
+    <text x="65" y="179">div.green.addEventListener(...)</text>
+    <rect x="55" y="199" width="270" height="34" rx="6" fill="#FFFFFF" stroke="#DC2626"/>
+    <text x="65" y="221">div.blue.addEventListener(...)</text>
+    <rect x="55" y="241" width="270" height="34" rx="6" fill="#FFFFFF" stroke="#DC2626"/>
+    <text x="65" y="263">div.yellow.addEventListener(...)</text>
+  </g>
+  <text x="50" y="310" font-size="12" fill="#B91C1C">요소가 늘어날 때마다 등록 코드도 늘어남</text>
+  <text x="50" y="330" font-size="12" fill="#B91C1C">나중에 동적으로 추가된 요소는</text>
+  <text x="50" y="348" font-size="12" fill="#B91C1C">이벤트가 자동으로 안 걸림</text>
+
+  <!-- GOOD: delegation -->
+  <rect x="390" y="65" width="330" height="330" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="410" y="95" font-size="14" font-weight="700" fill="#065F46">실습7 방식 - 부모에 위임</text>
+
+  <rect x="410" y="115" width="290" height="40" rx="6" fill="#D1FAE5" stroke="#059669"/>
+  <text x="420" y="140" font-size="12" fill="#065F46">section.addEventListener('mouseover', fn)</text>
+
+  <g font-size="11.5" fill="#065F46">
+    <rect x="430" y="175" width="60" height="30" fill="#A16207" opacity="0.85"/>
+    <rect x="500" y="175" width="60" height="30" fill="#16A34A"/>
+    <rect x="570" y="175" width="60" height="30" fill="#2563EB"/>
+    <rect x="640" y="175" width="60" height="30" fill="#CA8A04"/>
+  </g>
+  <text x="410" y="230" font-size="12" fill="#047857">↑ 자식 div 4개엔 이벤트 없음, section 하나만 있음</text>
+
+  <rect x="410" y="255" width="290" height="70" rx="6" fill="#FFFFFF" stroke="#059669"/>
+  <text x="420" y="278" font-size="12" fill="#065F46">function(evt){</text>
+  <text x="420" y="296" font-size="12" fill="#065F46">  var color = evt.target.className</text>
+  <text x="420" y="314" font-size="12" fill="#065F46">  // target으로 "누가 눌렸는지" 구분</text>
+  <text x="420" y="322" font-size="12" fill="#065F46">}</text>
+
+  <text x="410" y="355" font-size="12" fill="#047857" font-weight="700">✅ 등록은 1번, 나중에 추가된 자식도 자동으로 동작</text>
+
+  <text x="370" y="430" font-size="13" fill="#374151" text-anchor="middle" font-weight="600">부모까지 버블링되는 성질을 역이용 - "누가 눌렸는지"는 evt.target으로 알아낸다</text>
+</svg>

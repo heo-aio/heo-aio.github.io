@@ -1,0 +1,36 @@
+<svg viewBox="0 0 740 380" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="740" height="380" fill="#F9FAFB"/>
+  <text x="30" y="35" font-size="17" font-weight="700" fill="#1F2937">setInterval vs setTimeout - time.html 타이머 동작</text>
+
+  <!-- setInterval timeline -->
+  <text x="30" y="75" font-size="14" font-weight="700" fill="#4F46E5">setInterval(fn, 1000)  - 계속 반복</text>
+  <line x1="60" y1="100" x2="660" y2="100" stroke="#9CA3AF" stroke-width="2"/>
+  <circle cx="150" cy="100" r="7" fill="#4F46E5"/>
+  <circle cx="240" cy="100" r="7" fill="#4F46E5"/>
+  <circle cx="330" cy="100" r="7" fill="#4F46E5"/>
+  <circle cx="420" cy="100" r="7" fill="#4F46E5"/>
+  <text x="130" y="128" font-size="11.5" fill="#374151">i++ (1초)</text>
+  <text x="220" y="128" font-size="11.5" fill="#374151">i++ (2초)</text>
+  <text x="310" y="128" font-size="11.5" fill="#374151">i++ (3초)</text>
+  <text x="400" y="128" font-size="11.5" fill="#374151">i++ (4초)</text>
+
+  <rect x="480" y="80" width="150" height="40" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="492" y="105" font-size="12" fill="#991B1B" font-weight="700">clearInterval(time)</text>
+  <text x="450" y="150" font-size="12" fill="#6B7280">정지 버튼을 눌러야만 반복이 끝난다 (안 부르면 영원히 반복)</text>
+
+  <!-- setTimeout timeline -->
+  <text x="30" y="210" font-size="14" font-weight="700" fill="#059669">setTimeout(fn, 3000)  - 딱 한 번만</text>
+  <line x1="60" y1="235" x2="660" y2="235" stroke="#9CA3AF" stroke-width="2"/>
+  <circle cx="90" cy="235" r="7" fill="#059669"/>
+  <text x="65" y="262" font-size="11.5" fill="#374151">호출 시점</text>
+
+  <rect x="330" y="215" width="10" height="40" fill="#D1FAE5"/>
+  <text x="200" y="285" font-size="12" fill="#6B7280">3000ms 동안 대기 (그 사이에 다른 코드는 계속 실행됨)</text>
+
+  <circle cx="430" cy="235" r="8" fill="#10B981"/>
+  <text x="410" y="262" font-size="12" fill="#047857" font-weight="700">alert() 딱 1번 실행</text>
+
+  <rect x="30" y="315" width="680" height="55" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="45" y="340" font-size="13" fill="#1F2937" font-weight="700">핵심 차이: setInterval은 "멈출 때까지" 반복, setTimeout은 "한 번만" 지연 실행.</text>
+  <text x="45" y="358" font-size="12.5" fill="#6B7280">둘 다 반환값(id)을 변수에 저장해둬야 clearInterval / clearTimeout으로 멈출 수 있다.</text>
+</svg>

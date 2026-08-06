@@ -1,0 +1,36 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="760" height="460" fill="#F9FAFB"/>
+  <text x="30" y="35" font-size="17" font-weight="700" fill="#1F2937">DOM 선택자 4종 - 무엇을 반환하는가</text>
+
+  <!-- getElementById -->
+  <rect x="30" y="65" width="330" height="80" rx="10" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="45" y="90" font-size="14" font-weight="700" fill="#3730A3">document.getElementById('id')</text>
+  <text x="45" y="112" font-size="12.5" fill="#4338CA">→ 단일 Element (하나만, 배열 아님)</text>
+  <text x="45" y="130" font-size="12" fill="#6B7280">[el] 로 감싸야 배열처럼 다뤄짐</text>
+
+  <!-- querySelector -->
+  <rect x="400" y="65" width="330" height="80" rx="10" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="415" y="90" font-size="14" font-weight="700" fill="#3730A3">document.querySelector('.cls')</text>
+  <text x="415" y="112" font-size="12.5" fill="#4338CA">→ 단일 Element (CSS 선택자 중 첫번째)</text>
+  <text x="415" y="130" font-size="12" fill="#6B7280">여러 개 있어도 맨 처음 것 하나만</text>
+
+  <!-- getElementsByClassName / TagName -->
+  <rect x="30" y="170" width="330" height="100" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="45" y="195" font-size="14" font-weight="700" fill="#065F46">getElementsByClassName / TagName</text>
+  <text x="45" y="217" font-size="12.5" fill="#047857">→ HTMLCollection (유사배열, live)</text>
+  <text x="45" y="235" font-size="12" fill="#6B7280">DOM이 바뀌면 결과도 실시간 반영</text>
+  <text x="45" y="251" font-size="12" fill="#6B7280">for...of 로 순회 가능</text>
+
+  <!-- querySelectorAll -->
+  <rect x="400" y="170" width="330" height="100" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="415" y="195" font-size="14" font-weight="700" fill="#92400E">document.querySelectorAll('.cls')</text>
+  <text x="415" y="217" font-size="12.5" fill="#B45309">→ NodeList (유사배열, static)</text>
+  <text x="415" y="235" font-size="12" fill="#6B7280">호출 시점의 결과를 스냅샷으로 고정</text>
+  <text x="415" y="251" font-size="12" fill="#6B7280">이후 DOM이 바뀌어도 갱신 안 됨</text>
+
+  <rect x="30" y="310" width="700" height="120" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="50" y="340" font-size="14" font-weight="700" fill="#1F2937">헷갈리기 쉬운 포인트</text>
+  <text x="50" y="368" font-size="13" fill="#374151">· 단일 선택(Id, querySelector)은 배열이 아니라서 <tspan font-weight="700">.length나 for문을 바로 못 씀</tspan></text>
+  <text x="50" y="392" font-size="13" fill="#374151">· "Elements"처럼 복수형 이름의 메서드는 컬렉션(배열 유사)을 반환한다는 규칙으로 이름만 봐도 예측 가능</text>
+  <text x="50" y="416" font-size="13" fill="#374151">· HTMLCollection(live) vs NodeList(static) 차이는 "DOM 변경이 결과에 실시간 반영되는가"로 구분</text>
+</svg>

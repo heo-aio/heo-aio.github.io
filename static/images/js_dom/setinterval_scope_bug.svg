@@ -1,0 +1,27 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="760" height="440" fill="#F9FAFB"/>
+  <text x="30" y="36" font-size="17" font-weight="700" fill="#1F2937">13_page.html의 버그 - 콜백 안의 let은 콜백 밖에서 못 쓴다</text>
+
+  <!-- setInterval 콜백 스코프 -->
+  <rect x="40" y="65" width="680" height="170" rx="12" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="60" y="92" font-size="14" font-weight="700" fill="#92400E">setInterval(() =&gt; { ... }) 콜백 함수 스코프</text>
+  <text x="60" y="118" font-size="12.5" font-family="monospace" fill="#78350F">const date = new Date();</text>
+  <text x="60" y="140" font-size="12.5" font-family="monospace" fill="#78350F">let year = date.getFullYear();</text>
+  <text x="60" y="162" font-size="12.5" font-family="monospace" fill="#78350F">let str_month = month.toString().padStart(2,'0');</text>
+  <text x="60" y="184" font-size="12.5" font-family="monospace" fill="#78350F">// year, str_month ... 는 전부 이 블록 안에서만 존재</text>
+  <text x="60" y="206" font-size="12" fill="#B45309">console.log(date) → 정상 출력 (콜백 안이라 문제 없음)</text>
+
+  <!-- 화살표: 콜백 밖으로 나가려는 시도, X -->
+  <line x1="300" y1="235" x2="300" y2="275" stroke="#DC2626" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="315" y="260" font-size="12.5" fill="#DC2626" font-weight="700">콜백 밖에서 접근 시도 ❌</text>
+
+  <!-- 콜백 바깥 (전역) -->
+  <rect x="40" y="280" width="680" height="130" rx="12" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="60" y="307" font-size="14" font-weight="700" fill="#991B1B">setInterval() 호출문 바로 다음 줄 (콜백 밖, 전역 스코프)</text>
+  <text x="60" y="333" font-size="12.5" font-family="monospace" fill="#7F1D1D">console.log(`${year}-${str_month}-${str_day} ...`);</text>
+  <text x="60" y="355" font-size="12.5" fill="#B91C1C" font-weight="700">→ ReferenceError: year is not defined</text>
+  <text x="60" y="380" font-size="12" fill="#6B7280">year는 화살표함수 콜백 블록 안에서만 선언된 지역 변수라서,</text>
+  <text x="60" y="398" font-size="12" fill="#6B7280">그 블록을 벗어난 시점(바깥 스코프)에서는 애초에 존재하지 않는다.</text>
+
+  <text x="380" y="428" font-size="12.5" fill="#374151" text-anchor="middle" font-weight="600">해결: 바깥에서도 쓸 값이라면 let year 등을 콜백 "바깥"에서 먼저 선언해야 한다</text>
+</svg>

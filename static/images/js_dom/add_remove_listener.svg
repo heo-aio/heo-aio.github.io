@@ -1,0 +1,45 @@
+<svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="740" height="400" fill="#F9FAFB"/>
+  <text x="30" y="35" font-size="17" font-weight="700" fill="#1F2937">removeEventListener는 "같은 함수 참조"가 있어야 제거된다</text>
+
+  <!-- CASE A: 이름있는 함수 -->
+  <rect x="30" y="65" width="330" height="290" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="50" y="95" font-size="14" font-weight="700" fill="#065F46">37_page.html 방식 (이름 있는 함수)</text>
+
+  <rect x="50" y="115" width="290" height="40" rx="6" fill="#FFFFFF" stroke="#059669"/>
+  <text x="60" y="140" font-size="12" fill="#065F46">function printPos(evt){ ... }</text>
+
+  <rect x="50" y="170" width="290" height="40" rx="6" fill="#D1FAE5" stroke="#059669"/>
+  <text x="60" y="195" font-size="12" fill="#065F46">div.addEventListener('mousemove', printPos)</text>
+
+  <path d="M195 210 L195 240" stroke="#059669" stroke-width="2" marker-end="url(#a5)"/>
+
+  <rect x="50" y="245" width="290" height="40" rx="6" fill="#D1FAE5" stroke="#059669"/>
+  <text x="60" y="270" font-size="12" fill="#065F46">div.removeEventListener('mousemove', printPos)</text>
+
+  <text x="60" y="315" font-size="13" fill="#047857" font-weight="700">✅ 같은 printPos를 가리키므로 정확히 제거됨</text>
+  <text x="60" y="335" font-size="12" fill="#6B7280">등록할 때 쓴 함수와 같은 참조를 넘겨야 한다</text>
+
+  <!-- CASE B: 익명함수 -->
+  <rect x="390" y="65" width="320" height="290" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="410" y="95" font-size="14" font-weight="700" fill="#991B1B">30_page.html 방식 (익명함수)</text>
+
+  <rect x="410" y="115" width="280" height="55" rx="6" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="420" y="138" font-size="12" fill="#991B1B">zone.addEventListener('dblclick',</text>
+  <text x="420" y="156" font-size="12" fill="#991B1B">  function(evt){ ... })  ← 이름 없음</text>
+
+  <rect x="410" y="185" width="280" height="55" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-dasharray="4,3"/>
+  <text x="420" y="208" font-size="12" fill="#991B1B">zone.removeEventListener('dblclick',</text>
+  <text x="420" y="226" font-size="12" fill="#991B1B">  function(evt){ ... })  ← 다른 함수!</text>
+
+  <text x="420" y="270" font-size="13" fill="#DC2626" font-weight="700">❌ 매번 새로 만들어진 별개 함수라 제거 안 됨</text>
+  <text x="420" y="290" font-size="12" fill="#6B7280">겉모습이 같아도 메모리상 다른 함수로 취급됨</text>
+  <text x="420" y="310" font-size="12" fill="#6B7280">→ 나중에 제거할 계획이 있다면</text>
+  <text x="420" y="326" font-size="12" fill="#6B7280">   반드시 이름 붙인 함수로 등록해야 한다</text>
+
+  <defs>
+    <marker id="a5" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#059669"/>
+    </marker>
+  </defs>
+</svg>

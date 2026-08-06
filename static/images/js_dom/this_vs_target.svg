@@ -1,0 +1,40 @@
+<svg viewBox="0 0 740 460" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="740" height="460" fill="#F9FAFB"/>
+  <text x="30" y="35" font-size="17" font-weight="700" fill="#1F2937">this vs evt.target - test2.html의 .item 클릭 예시</text>
+
+  <!-- outer .item -->
+  <rect x="60" y="70" width="600" height="230" rx="12" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2.5"/>
+  <text x="80" y="100" font-size="14" font-weight="700" fill="#3730A3">div.item  ← addEventListener('click', ...)가 걸린 곳</text>
+
+  <!-- inner text div -->
+  <rect x="100" y="130" width="280" height="70" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="115" y="160" font-size="13" fill="#92400E">div "A 아이템 구매 수"</text>
+  <text x="115" y="180" font-size="12" fill="#B45309">여기를 클릭했다고 하자 👇</text>
+
+  <!-- inner .cnt div -->
+  <rect x="410" y="130" width="200" height="70" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="425" y="160" font-size="13" fill="#065F46">div.cnt (숫자 0)</text>
+  <text x="425" y="180" font-size="12" fill="#047857">cur_cnt로 찾아서 +1 할 대상</text>
+
+  <!-- click point -->
+  <circle cx="240" cy="165" r="10" fill="#DC2626"/>
+  <text x="250" y="235" font-size="13" fill="#DC2626" font-weight="700">클릭 발생 지점</text>
+
+  <!-- bubble arrow -->
+  <path d="M 240 155 C 240 100, 240 70, 300 70" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#a4)"/>
+  <text x="330" y="65" font-size="12" fill="#4F46E5" font-weight="600">이벤트가 위로 버블링되어</text>
+  <text x="330" y="45" font-size="12" fill="#4F46E5" font-weight="600">listener가 걸린 .item에서 실행됨</text>
+
+  <!-- result box -->
+  <rect x="120" y="330" width="500" height="110" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="140" y="358" font-size="14" font-weight="700" fill="#1F2937">함수 안에서 확인해보면</text>
+  <text x="140" y="384" font-size="13" fill="#374151"><tspan font-weight="700" fill="#3730A3">this</tspan>  → div.item  (addEventListener를 호출한, 리스너가 걸린 요소)</text>
+  <text x="140" y="408" font-size="13" fill="#374151"><tspan font-weight="700" fill="#B45309">evt.target</tspan>  → 클릭된 텍스트 div  (실제로 이벤트가 발생한 요소)</text>
+  <text x="140" y="428" font-size="12" fill="#6B7280">→ this.querySelector('.cnt')로 "이 아이템 안의 카운터"를 정확히 찾을 수 있는 이유</text>
+
+  <defs>
+    <marker id="a4" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4F46E5"/>
+    </marker>
+  </defs>
+</svg>

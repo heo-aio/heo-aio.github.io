@@ -1,0 +1,73 @@
+<svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="700" height="400" fill="#F9FAFB"/>
+
+  <text x="30" y="35" font-size="17" font-weight="700" fill="#1F2937">let y = [...x]  →  spread는 "다른 메모리"에 복사한다</text>
+
+  <!-- BEFORE -->
+  <text x="30" y="75" font-size="14" font-weight="700" fill="#374151">BEFORE  (복사 직후, 값은 같지만 메모리는 다름)</text>
+
+  <text x="40" y="105" font-size="13" fill="#4F46E5" font-weight="700">x</text>
+  <g>
+    <rect x="60" y="88" width="46" height="34" fill="#EEF2FF" stroke="#4F46E5"/>
+    <rect x="106" y="88" width="46" height="34" fill="#EEF2FF" stroke="#4F46E5"/>
+    <rect x="152" y="88" width="46" height="34" fill="#EEF2FF" stroke="#4F46E5"/>
+    <rect x="198" y="88" width="46" height="34" fill="#EEF2FF" stroke="#4F46E5"/>
+    <rect x="244" y="88" width="46" height="34" fill="#EEF2FF" stroke="#4F46E5"/>
+    <text x="78" y="110" font-size="13">1</text><text x="124" y="110" font-size="13">2</text>
+    <text x="170" y="110" font-size="13">3</text><text x="216" y="110" font-size="13">4</text>
+    <text x="262" y="110" font-size="13">5</text>
+  </g>
+
+  <text x="380" y="105" font-size="13" fill="#059669" font-weight="700">y = [...x]</text>
+  <g>
+    <rect x="450" y="88" width="46" height="34" fill="#ECFDF5" stroke="#059669"/>
+    <rect x="496" y="88" width="46" height="34" fill="#ECFDF5" stroke="#059669"/>
+    <rect x="542" y="88" width="46" height="34" fill="#ECFDF5" stroke="#059669"/>
+    <rect x="588" y="88" width="46" height="34" fill="#ECFDF5" stroke="#059669"/>
+    <rect x="634" y="88" width="46" height="34" fill="#ECFDF5" stroke="#059669"/>
+    <text x="468" y="110" font-size="13">1</text><text x="514" y="110" font-size="13">2</text>
+    <text x="560" y="110" font-size="13">3</text><text x="606" y="110" font-size="13">4</text>
+    <text x="652" y="110" font-size="13">5</text>
+  </g>
+
+  <path d="M 300 105 L 440 105" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#a2)"/>
+  <text x="305" y="140" font-size="11.5" fill="#6B7280">값만 복사, 서로 다른 배열</text>
+
+  <!-- AFTER -->
+  <text x="30" y="210" font-size="14" font-weight="700" fill="#374151">AFTER  x[4] = 'X'   /   y[0] = 'Y'  →  서로 영향 없음</text>
+
+  <text x="40" y="240" font-size="13" fill="#4F46E5" font-weight="700">x</text>
+  <g>
+    <rect x="60" y="223" width="46" height="34" fill="#EEF2FF" stroke="#4F46E5"/>
+    <rect x="106" y="223" width="46" height="34" fill="#EEF2FF" stroke="#4F46E5"/>
+    <rect x="152" y="223" width="46" height="34" fill="#EEF2FF" stroke="#4F46E5"/>
+    <rect x="198" y="223" width="46" height="34" fill="#EEF2FF" stroke="#4F46E5"/>
+    <rect x="244" y="223" width="46" height="34" fill="#FEE2E2" stroke="#DC2626" stroke-width="2.5"/>
+    <text x="78" y="245" font-size="13">1</text><text x="124" y="245" font-size="13">2</text>
+    <text x="170" y="245" font-size="13">3</text><text x="216" y="245" font-size="13">4</text>
+    <text x="258" y="245" font-size="13" fill="#DC2626" font-weight="700">X</text>
+  </g>
+
+  <text x="380" y="240" font-size="13" fill="#059669" font-weight="700">y</text>
+  <g>
+    <rect x="450" y="223" width="46" height="34" fill="#FEE2E2" stroke="#DC2626" stroke-width="2.5"/>
+    <rect x="496" y="223" width="46" height="34" fill="#ECFDF5" stroke="#059669"/>
+    <rect x="542" y="223" width="46" height="34" fill="#ECFDF5" stroke="#059669"/>
+    <rect x="588" y="223" width="46" height="34" fill="#ECFDF5" stroke="#059669"/>
+    <rect x="634" y="223" width="46" height="34" fill="#ECFDF5" stroke="#059669"/>
+    <text x="466" y="245" font-size="13" fill="#DC2626" font-weight="700">Y</text>
+    <text x="514" y="245" font-size="13">2</text>
+    <text x="560" y="245" font-size="13">3</text><text x="606" y="245" font-size="13">4</text>
+    <text x="652" y="245" font-size="13">5</text>
+  </g>
+
+  <text x="30" y="300" font-size="12.5" fill="#6B7280">x[4]을 'X'로 바꿔도 y는 그대로 [1,2,3,4,5]</text>
+  <text x="30" y="320" font-size="12.5" fill="#6B7280">y[0]을 'Y'로 바꿔도 x는 그대로 [1,2,3,4,'X']</text>
+  <text x="30" y="360" font-size="13.5" fill="#1F2937" font-weight="700">→ spread는 원본과 완전히 분리된 새 배열을 만든다 (참조가 아닌 값 복사)</text>
+
+  <defs>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#9CA3AF"/>
+    </marker>
+  </defs>
+</svg>

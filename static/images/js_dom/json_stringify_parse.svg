@@ -1,0 +1,44 @@
+<svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="760" height="380" fill="#F9FAFB"/>
+  <text x="30" y="36" font-size="17" font-weight="700" fill="#1F2937">JSON.stringify / JSON.parse - 객체 ↔ 문자열</text>
+
+  <!-- 왼쪽: 객체 -->
+  <rect x="40" y="70" width="290" height="180" rx="10" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="60" y="98" font-size="13.5" font-weight="700" fill="#3730A3">JS 객체 (object)</text>
+  <text x="60" y="124" font-size="12" font-family="monospace" fill="#312E81">{</text>
+  <text x="75" y="144" font-size="12" font-family="monospace" fill="#312E81">name: 'Daniel',</text>
+  <text x="75" y="164" font-size="12" font-family="monospace" fill="#312E81">age: 12,</text>
+  <text x="75" y="184" font-size="12" font-family="monospace" fill="#312E81">message: 'Hello...'</text>
+  <text x="60" y="204" font-size="12" font-family="monospace" fill="#312E81">}</text>
+  <text x="60" y="230" font-size="11.5" fill="#4338CA">→ 키에 접근: json.name, json.age</text>
+
+  <!-- 오른쪽: 문자열 -->
+  <rect x="430" y="70" width="290" height="180" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="450" y="98" font-size="13.5" font-weight="700" fill="#065F46">JSON 문자열 (string)</text>
+  <text x="450" y="130" font-size="11" font-family="monospace" fill="#065F46">'{"name":"Daniel",</text>
+  <text x="450" y="150" font-size="11" font-family="monospace" fill="#065F46">"age":12,</text>
+  <text x="450" y="170" font-size="11" font-family="monospace" fill="#065F46">"message":"Hello..."}'</text>
+  <text x="450" y="205" font-size="11.5" fill="#047857">→ 통신/저장 가능한 순수 텍스트</text>
+  <text x="450" y="225" font-size="11.5" fill="#047857">→ .name처럼 바로 접근은 불가능</text>
+
+  <!-- 화살표 위: stringify -->
+  <path d="M 335 130 L 425 130" stroke="#4F46E5" stroke-width="2.5" marker-end="url(#r1)"/>
+  <text x="345" y="118" font-size="12.5" fill="#4F46E5" font-weight="700">JSON.stringify(obj)</text>
+  <text x="345" y="150" font-size="11" fill="#6B7280">직렬화 - 객체를 문자열로</text>
+
+  <!-- 화살표 아래: parse -->
+  <path d="M 425 200 L 335 200" stroke="#059669" stroke-width="2.5" marker-end="url(#r2)"/>
+  <text x="345" y="188" font-size="12.5" fill="#059669" font-weight="700">JSON.parse(str)</text>
+  <text x="345" y="220" font-size="11" fill="#6B7280">역직렬화 - 문자열을 객체로</text>
+
+  <!-- 하단 실습 노트 -->
+  <rect x="40" y="270" width="680" height="90" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="60" y="298" font-size="13" font-weight="700" fill="#1F2937">15_page.html 실습에서 짚을 점</text>
+  <text x="60" y="322" font-size="12.5" fill="#374151">주석 처리된 정석 방법: JSON.parse → 객체에 속성 추가 → 다시 JSON.stringify</text>
+  <text x="60" y="344" font-size="12.5" fill="#374151">실제 코드: 문자열의 중괄호를 replace로 떼었다 붙였다 하며 직접 이어붙임 (더 번거롭고 실수 위험)</text>
+
+  <defs>
+    <marker id="r1" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4F46E5"/></marker>
+    <marker id="r2" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#059669"/></marker>
+  </defs>
+</svg>

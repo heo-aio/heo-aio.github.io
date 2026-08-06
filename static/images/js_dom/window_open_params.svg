@@ -1,0 +1,33 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="760" height="480" fill="#F9FAFB"/>
+  <text x="30" y="36" font-size="17" font-weight="700" fill="#1F2937">window.open(url, 이름, 옵션) - 새 창 열기</text>
+
+  <!-- 화면 영역 -->
+  <rect x="30" y="60" width="700" height="260" rx="10" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="45" y="82" font-size="12" fill="#6B7280">모니터 화면 (좌상단이 원점 0,0)</text>
+
+  <!-- 새 창 -->
+  <rect x="410" y="140" width="220" height="150" rx="8" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2.5"/>
+  <text x="425" y="165" font-size="13" font-weight="700" fill="#3730A3">새 창 (naver.com)</text>
+  <text x="425" y="188" font-size="12" fill="#4338CA">width = 400</text>
+  <text x="425" y="206" font-size="12" fill="#4338CA">height = 400</text>
+
+  <!-- top/left 화살표 표시 -->
+  <line x1="30" y1="140" x2="410" y2="140" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="150" y="132" font-size="11.5" fill="#DC2626">top = 100 (위에서부터 거리)</text>
+
+  <line x1="410" y1="320" x2="410" y2="140" stroke="#059669" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="415" y="335" font-size="11.5" fill="#059669">left = 500 (왼쪽에서부터 거리)</text>
+
+  <!-- 코드 박스 -->
+  <rect x="30" y="345" width="700" height="115" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="50" y="372" font-size="12.5" font-family="monospace" fill="#1F2937">window.open(</text>
+  <text x="70" y="393" font-size="12.5" font-family="monospace" fill="#4F46E5">'https://naver.com',   </text>
+  <text x="300" y="393" font-size="11.5" fill="#6B7280">// ① 열 주소(url)</text>
+  <text x="70" y="414" font-size="12.5" font-family="monospace" fill="#4F46E5">'',                     </text>
+  <text x="300" y="414" font-size="11.5" fill="#6B7280">// ② 창 이름 (비우면 임의 지정)</text>
+  <text x="70" y="435" font-size="12.5" font-family="monospace" fill="#4F46E5">'width=400,height=400,top=100,left=500')</text>
+  <text x="70" y="452" font-size="11.5" fill="#6B7280">// ③ 옵션 문자열 - 크기/위치/스크롤바 등을 콤마로 나열</text>
+
+  <text x="345" y="330" font-size="11.5" fill="#374151" text-anchor="middle" font-weight="600">※ width/height를 안 주면 새 탭으로 열린다</text>
+</svg>

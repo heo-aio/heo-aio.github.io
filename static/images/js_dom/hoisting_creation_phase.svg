@@ -1,0 +1,24 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="760" height="420" fill="#F9FAFB"/>
+  <text x="30" y="36" font-size="17" font-weight="700" fill="#1F2937">호이스팅의 진짜 의미 - 셋 다 등록은 되지만, 초기화가 다르다</text>
+  <text x="30" y="58" font-size="12.5" fill="#6B7280">(59_page.html) "let/const는 호이스팅이 안 된다"가 아니라 "초기값을 안 넣어줄 뿐" 이다</text>
+
+  <!-- var -->
+  <rect x="30" y="80" width="700" height="90" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="50" y="105" font-size="13.5" font-weight="700" fill="#065F46">var elice</text>
+  <text x="50" y="128" font-size="12" fill="#047857">실행 컨텍스트 생성 단계: 선언 등록 + 기본값 undefined로 초기화까지 미리 해둠</text>
+  <text x="50" y="150" font-size="12" fill="#047857" font-weight="700">→ console.log(elice) 를 선언 전에 호출해도 undefined (에러 아님)</text>
+
+  <!-- const -->
+  <rect x="30" y="185" width="700" height="90" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="50" y="210" font-size="13.5" font-weight="700" fill="#991B1B">const elice3</text>
+  <text x="50" y="233" font-size="12" fill="#B91C1C">실행 컨텍스트 생성 단계: 선언만 등록, 초기값은 넣지 않음 (TDZ 상태로 대기)</text>
+  <text x="50" y="255" font-size="12" fill="#B91C1C" font-weight="700">→ console.log(elice3) 를 선언 전에 호출하면 ReferenceError</text>
+
+  <!-- 요약 -->
+  <rect x="30" y="290" width="700" height="110" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="50" y="318" font-size="13.5" font-weight="700" fill="#1F2937">그래서 결론은</text>
+  <text x="50" y="344" font-size="12.5" fill="#374151">var, let, const 모두 "선언부는" 컨텍스트 생성 단계에서 미리 등록된다 (셋 다 호이스팅된다)</text>
+  <text x="50" y="368" font-size="12.5" fill="#374151">차이는 그 시점에 <tspan font-weight="700" fill="#059669">var만 undefined로 초기화까지</tspan> 되고, <tspan font-weight="700" fill="#DC2626">let/const는 초기화 자체를 안 한다</tspan>는 것</text>
+  <text x="50" y="392" font-size="12" fill="#6B7280">그 "초기화 안 된 구간"을 TDZ(Temporal Dead Zone)라고 부른다</text>
+</svg>

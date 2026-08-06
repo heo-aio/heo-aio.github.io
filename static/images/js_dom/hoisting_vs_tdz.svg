@@ -1,0 +1,40 @@
+<svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="720" height="380" fill="#F9FAFB"/>
+
+  <text x="30" y="35" font-size="17" font-weight="700" fill="#1F2937">함수 선언식 vs const 화살표함수 — 실행 순서 비교</text>
+
+  <!-- 함수 선언식 타임라인 -->
+  <text x="30" y="75" font-size="14" font-weight="700" fill="#047857">function hoisting(){...}  (함수 선언식)</text>
+  <line x1="60" y1="100" x2="660" y2="100" stroke="#9CA3AF" stroke-width="2"/>
+
+  <circle cx="100" cy="100" r="7" fill="#10B981"/>
+  <text x="80" y="130" font-size="12.5" fill="#374151">코드 실행 시작</text>
+  <text x="80" y="146" font-size="12.5" fill="#6B7280">(함수 전체가 이미</text>
+  <text x="80" y="161" font-size="12.5" fill="#6B7280">메모리에 올라감)</text>
+
+  <circle cx="360" cy="100" r="8" fill="#10B981"/>
+  <text x="300" y="130" font-size="13" fill="#047857" font-weight="700">hoisting() 호출 → 정상 실행 ✅</text>
+  <text x="300" y="146" font-size="12" fill="#6B7280">정의보다 먼저 호출해도 문제없음</text>
+
+  <circle cx="600" cy="100" r="7" fill="#10B981"/>
+  <text x="560" y="130" font-size="12.5" fill="#374151">function 정의부</text>
+  <text x="555" y="146" font-size="12" fill="#6B7280">(이미 위에서 쓸 수 있었음)</text>
+
+  <!-- const 화살표함수 타임라인 -->
+  <text x="30" y="220" font-size="14" font-weight="700" fill="#B45309">const x4 = x =&gt; ...  (const 화살표함수)</text>
+  <line x1="60" y1="245" x2="660" y2="245" stroke="#9CA3AF" stroke-width="2"/>
+
+  <rect x="90" y="237" width="270" height="16" fill="#FEE2E2"/>
+  <text x="95" y="285" font-size="12" fill="#B91C1C" font-weight="600">TDZ (Temporal Dead Zone)</text>
+  <text x="95" y="300" font-size="12" fill="#6B7280">변수는 선언됐지만 아직 초기화 전</text>
+
+  <circle cx="200" cy="245" r="8" fill="#DC2626"/>
+  <text x="150" y="330" font-size="13" fill="#DC2626" font-weight="700">x4(3) 호출 → ReferenceError ❌</text>
+  <text x="150" y="346" font-size="12" fill="#6B7280">아직 초기화되지 않은 상태(TDZ)라서 못 씀</text>
+
+  <circle cx="600" cy="245" r="7" fill="#10B981"/>
+  <text x="530" y="220" font-size="12.5" fill="#374151">const x4 = x =&gt; ... 정의부</text>
+  <text x="540" y="236" font-size="12" fill="#6B7280">← 여기서부터 사용 가능</text>
+
+  <text x="30" y="370" font-size="13" fill="#374151" font-weight="600">핵심: function 선언은 "함수 전체"가 호이스팅되지만, const/let 화살표함수는 "변수 선언"만 호이스팅되고 초기화는 그 줄에서 이뤄진다.</text>
+</svg>

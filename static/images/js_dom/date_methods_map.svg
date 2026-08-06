@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="760" height="420" fill="#F9FAFB"/>
+  <text x="30" y="36" font-size="17" font-weight="700" fill="#1F2937">Date 객체 - 각 get 메서드가 가져오는 부분</text>
+
+  <!-- 결과 날짜 문자열 -->
+  <rect x="30" y="60" width="700" height="55" rx="8" fill="#1F2937"/>
+  <text x="50" y="95" font-size="20" font-family="monospace" fill="#F9FAFB">2026 - 08 - 06   13 : 34 : 20</text>
+
+  <!-- 연결선과 라벨들 (6개, 2줄로 배치해서 겹침 방지) -->
+  <!-- 연도 -->
+  <line x1="90" y1="115" x2="90" y2="150" stroke="#4F46E5" stroke-width="2"/>
+  <rect x="35" y="150" width="150" height="52" rx="8" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="45" y="172" font-size="12.5" font-weight="700" fill="#3730A3">getFullYear()</text>
+  <text x="45" y="190" font-size="11.5" fill="#4338CA">→ 2026 (연도 그대로)</text>
+
+  <!-- 월 -->
+  <line x1="200" y1="115" x2="200" y2="150" stroke="#DC2626" stroke-width="2"/>
+  <rect x="200" y="150" width="170" height="52" rx="8" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="210" y="172" font-size="12.5" font-weight="700" fill="#991B1B">getMonth() + 1</text>
+  <text x="210" y="190" font-size="11.5" fill="#B91C1C">→ 0~11이라 +1 필수!</text>
+
+  <!-- 일 -->
+  <line x1="320" y1="115" x2="380" y2="150" stroke="#059669" stroke-width="2"/>
+  <rect x="385" y="150" width="140" height="52" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="395" y="172" font-size="12.5" font-weight="700" fill="#065F46">getDate()</text>
+  <text x="395" y="190" font-size="11.5" fill="#047857">→ 06 (일, 1~31)</text>
+
+  <!-- 시 -->
+  <line x1="440" y1="115" x2="600" y2="150" stroke="#D97706" stroke-width="2"/>
+  <rect x="545" y="150" width="150" height="52" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="555" y="172" font-size="12.5" font-weight="700" fill="#92400E">getHours()</text>
+  <text x="555" y="190" font-size="11.5" fill="#B45309">→ 13 (시, 0~23)</text>
+
+  <!-- 분/초는 아래줄 -->
+  <rect x="200" y="230" width="180" height="52" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2"/>
+  <text x="210" y="252" font-size="12.5" font-weight="700" fill="#5B21B6">getMinutes()</text>
+  <text x="210" y="270" font-size="11.5" fill="#6D28D9">→ 34 (분, 0~59)</text>
+
+  <rect x="400" y="230" width="180" height="52" rx="8" fill="#FDF2F8" stroke="#DB2777" stroke-width="2"/>
+  <text x="410" y="252" font-size="12.5" font-weight="700" fill="#9D174D">getSeconds()</text>
+  <text x="410" y="270" font-size="11.5" fill="#BE185D">→ 20 (초, 0~59)</text>
+
+  <!-- padStart 설명 -->
+  <rect x="30" y="310" width="700" height="90" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="50" y="338" font-size="13" font-weight="700" fill="#1F2937">str.padStart(2, '0')  →  두 자리로 맞추고 빈 자리는 '0'으로 채운다</text>
+  <text x="50" y="360" font-size="12.5" fill="#374151">month.toString().padStart(2, '0')  →  8 → '08'  (한 자리 숫자를 두 자리처럼 보이게)</text>
+  <text x="50" y="382" font-size="12" fill="#6B7280">숫자 그대로면 8:5:3 처럼 나오는 걸, 08:05:03 형태로 통일할 때 쓴다</text>
+</svg>
