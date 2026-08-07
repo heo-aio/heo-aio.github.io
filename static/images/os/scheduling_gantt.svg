@@ -1,0 +1,54 @@
+<svg viewBox="0 0 780 480" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="780" height="480" fill="#F9FAFB"/>
+  <text x="30" y="34" font-size="17" font-weight="700" fill="#1F2937">FCFS vs SJF vs RR - 같은 프로세스로 직접 계산해보기</text>
+  <text x="30" y="55" font-size="12" fill="#6B7280">P1=5, P2=3, P3=8, P4=6 (버스트 타임, 전부 t=0 도착), Time Quantum=4</text>
+
+  <!-- scale -->
+  <text x="60" y="80" font-size="10.5" fill="#6B7280">0</text>
+  <text x="196" y="80" font-size="10.5" fill="#6B7280">4</text>
+  <text x="332" y="80" font-size="10.5" fill="#6B7280">8</text>
+  <text x="468" y="80" font-size="10.5" fill="#6B7280">12</text>
+  <text x="604" y="80" font-size="10.5" fill="#6B7280">16</text>
+  <text x="740" y="80" font-size="10.5" fill="#6B7280">20</text>
+
+  <!-- FCFS row -->
+  <text x="30" y="105" font-size="12.5" font-weight="700" fill="#374151">FCFS</text>
+  <g transform="translate(60,90)">
+    <rect x="0" y="0" width="170" height="30" fill="#EEF2FF" stroke="#4F46E5"/><text x="65" y="20" font-size="11" fill="#3730A3">P1 (5)</text>
+    <rect x="170" y="0" width="102" height="30" fill="#ECFDF5" stroke="#059669"/><text x="205" y="20" font-size="11" fill="#065F46">P2</text>
+    <rect x="272" y="0" width="272" height="30" fill="#FEF3C7" stroke="#D97706"/><text x="390" y="20" font-size="11" fill="#92400E">P3 (8)</text>
+    <rect x="544" y="0" width="204" height="30" fill="#FEE2E2" stroke="#DC2626"/><text x="625" y="20" font-size="11" fill="#991B1B">P4 (6)</text>
+  </g>
+  <text x="620" y="140" font-size="12" fill="#374151" font-weight="700">평균 대기시간 = 7.25</text>
+
+  <!-- SJF row -->
+  <text x="30" y="180" font-size="12.5" font-weight="700" fill="#374151">SJF</text>
+  <g transform="translate(60,165)">
+    <rect x="0" y="0" width="102" height="30" fill="#ECFDF5" stroke="#059669"/><text x="35" y="20" font-size="11" fill="#065F46">P2 (3)</text>
+    <rect x="102" y="0" width="170" height="30" fill="#EEF2FF" stroke="#4F46E5"/><text x="167" y="20" font-size="11" fill="#3730A3">P1 (5)</text>
+    <rect x="272" y="0" width="204" height="30" fill="#FEE2E2" stroke="#DC2626"/><text x="355" y="20" font-size="11" fill="#991B1B">P4 (6)</text>
+    <rect x="476" y="0" width="272" height="30" fill="#FEF3C7" stroke="#D97706"/><text x="595" y="20" font-size="11" fill="#92400E">P3 (8)</text>
+  </g>
+  <text x="620" y="215" font-size="12" fill="#374151" font-weight="700">평균 대기시간 = 6.25</text>
+
+  <!-- RR row -->
+  <text x="30" y="255" font-size="12.5" font-weight="700" fill="#374151">RR (Q=4)</text>
+  <g transform="translate(60,240)">
+    <rect x="0" y="0" width="136" height="30" fill="#EEF2FF" stroke="#4F46E5"/><text x="55" y="20" font-size="10.5" fill="#3730A3">P1</text>
+    <rect x="136" y="0" width="102" height="30" fill="#ECFDF5" stroke="#059669"/><text x="175" y="20" font-size="10.5" fill="#065F46">P2</text>
+    <rect x="238" y="0" width="136" height="30" fill="#FEF3C7" stroke="#D97706"/><text x="295" y="20" font-size="10.5" fill="#92400E">P3</text>
+    <rect x="374" y="0" width="136" height="30" fill="#FEE2E2" stroke="#DC2626"/><text x="430" y="20" font-size="10.5" fill="#991B1B">P4</text>
+    <rect x="510" y="0" width="34" height="30" fill="#EEF2FF" stroke="#4F46E5"/><text x="518" y="20" font-size="9.5" fill="#3730A3">P1</text>
+    <rect x="544" y="0" width="136" height="30" fill="#FEF3C7" stroke="#D97706"/><text x="600" y="20" font-size="10.5" fill="#92400E">P3</text>
+    <rect x="680" y="0" width="68" height="30" fill="#FEE2E2" stroke="#DC2626"/><text x="705" y="20" font-size="10.5" fill="#991B1B">P4</text>
+  </g>
+  <text x="620" y="290" font-size="12" fill="#DC2626" font-weight="700">평균 대기시간 = 10.75</text>
+
+  <!-- insight box -->
+  <rect x="30" y="320" width="720" height="140" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="50" y="348" font-size="13.5" font-weight="700" fill="#1F2937">직접 계산해보고 알게 된 반전</text>
+  <text x="50" y="374" font-size="12.5" fill="#374151">"Round Robin이 공정하고 응답성이 좋다"고만 외웠는데, 막상 계산해보니 평균 <tspan font-weight="700" fill="#DC2626">대기시간은 오히려 가장 나빴다</tspan> (10.75 &gt; SJF 6.25).</text>
+  <text x="50" y="398" font-size="12.5" fill="#374151">Round Robin이 잘하는 건 "평균 대기시간"이 아니라 <tspan font-weight="700">"첫 응답까지 걸리는 시간"</tspan>이다 - 모든 프로세스가 t=4 안에는 한 번씩 실행되므로</text>
+  <text x="50" y="420" font-size="12.5" fill="#374151">"화면이 멈춘 것처럼 보이는 시간"이 짧아진다. 그래서 대화형(interactive) 시스템에 유리하다고 배우는 이유가 이거였다.</text>
+  <text x="50" y="444" font-size="12" fill="#6B7280">→ Quantum이 프로세스들에 비해 너무 작으면 context switch 비용 + 대기시간이 함께 늘어난다는 것도 체감됐다.</text>
+</svg>

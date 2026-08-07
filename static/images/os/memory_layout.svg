@@ -1,0 +1,45 @@
+<svg viewBox="0 0 780 570" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="780" height="570" fill="#F9FAFB"/>
+  <text x="30" y="36" font-size="17" font-weight="700" fill="#1F2937">프로세스 메모리 구조 - Stack과 Heap은 서로를 향해 자란다</text>
+
+  <text x="600" y="95" font-size="12" fill="#6B7280">↑ 높은 주소</text>
+  <text x="600" y="545" font-size="12" fill="#6B7280">↓ 낮은 주소</text>
+
+  <!-- Stack -->
+  <rect x="200" y="75" width="360" height="100" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="222" y="103" font-size="14" font-weight="700" fill="#991B1B">Stack</text>
+  <text x="222" y="126" font-size="12" fill="#B91C1C">함수 호출 정보 (지역변수 · 매개변수)</text>
+  <text x="222" y="148" font-size="12" fill="#B91C1C">함수 종료 시 자동으로 제거됨</text>
+
+  <!-- gap1: Stack -> 충돌구간 -->
+  <path d="M 480 178 L 480 232" stroke="#DC2626" stroke-width="2.5" marker-end="url(#down1)"/>
+  <text x="300" y="205" font-size="12" fill="#DC2626" font-weight="700">아래로 자람 (재귀 호출마다 쌓임)</text>
+
+  <!-- 충돌 지대 -->
+  <rect x="200" y="235" width="360" height="60" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="222" y="260" font-size="12.5" fill="#92400E" font-weight="700">충돌 구간 (Stack ↔ Heap)</text>
+  <text x="222" y="282" font-size="12" fill="#92400E">여기서 만나면 Stack Overflow</text>
+
+  <!-- gap2: 충돌구간 -> Heap -->
+  <path d="M 480 350 L 480 298" stroke="#4F46E5" stroke-width="2.5" marker-end="url(#up1)"/>
+  <text x="300" y="330" font-size="12" fill="#4F46E5" font-weight="700">위로 자람 (동적 할당마다)</text>
+
+  <!-- Heap -->
+  <rect x="200" y="355" width="360" height="100" rx="10" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2"/>
+  <text x="222" y="383" font-size="14" font-weight="700" fill="#3730A3">Heap</text>
+  <text x="222" y="406" font-size="12" fill="#4338CA">동적 할당 데이터 (malloc, 객체 등)</text>
+  <text x="222" y="428" font-size="12" fill="#4338CA">직접 해제 안 하면 메모리 누수 위험</text>
+
+  <!-- Data -->
+  <rect x="200" y="470" width="360" height="45" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="222" y="497" font-size="12.5" fill="#065F46" font-weight="700">Data - 전역/정적 변수 (프로그램 종료까지 유지)</text>
+
+  <!-- Code -->
+  <rect x="200" y="525" width="360" height="35" rx="8" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="222" y="548" font-size="12.5" fill="#374151" font-weight="700">Code - 실행 명령어 (읽기 전용)</text>
+
+  <defs>
+    <marker id="down1" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#DC2626"/></marker>
+    <marker id="up1" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4F46E5"/></marker>
+  </defs>
+</svg>

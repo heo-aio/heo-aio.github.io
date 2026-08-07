@@ -1,0 +1,49 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard','Apple SD Gothic Neo',sans-serif">
+  <rect x="0" y="0" width="760" height="480" fill="#F9FAFB"/>
+  <text x="30" y="34" font-size="17" font-weight="700" fill="#1F2937">Deadlock - 프로세스 2개, 자원 2개로 순환대기 재현</text>
+
+  <!-- P1 -->
+  <rect x="60" y="80" width="140" height="60" rx="10" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2.5"/>
+  <text x="130" y="116" font-size="14" font-weight="700" fill="#3730A3" text-anchor="middle">프로세스 P1</text>
+
+  <!-- P2 -->
+  <rect x="560" y="80" width="140" height="60" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2.5"/>
+  <text x="630" y="116" font-size="14" font-weight="700" fill="#065F46" text-anchor="middle">프로세스 P2</text>
+
+  <!-- R1 -->
+  <rect x="60" y="300" width="140" height="60" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2.5"/>
+  <text x="130" y="336" font-size="14" font-weight="700" fill="#92400E" text-anchor="middle">자원 R1 (프린터)</text>
+
+  <!-- R2 -->
+  <rect x="560" y="300" width="140" height="60" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="630" y="336" font-size="14" font-weight="700" fill="#991B1B" text-anchor="middle">자원 R2 (스캐너)</text>
+
+  <!-- P1 holds R1 -->
+  <path d="M 130 140 L 130 295" stroke="#4F46E5" stroke-width="2.5" marker-end="url(#a11)"/>
+  <text x="140" y="220" font-size="11.5" fill="#4F46E5" font-weight="700">P1이 R1을 점유 중</text>
+
+  <!-- P2 holds R2 -->
+  <path d="M 630 140 L 630 295" stroke="#059669" stroke-width="2.5" marker-end="url(#a11)"/>
+  <text x="480" y="220" font-size="11.5" fill="#059669" font-weight="700">P2가 R2를 점유 중</text>
+
+  <!-- P1 wants R2 -->
+  <path d="M 200 100 C 380 60, 500 60, 555 100" stroke="#DC2626" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#a12)"/>
+  <text x="330" y="60" font-size="11.5" fill="#DC2626" font-weight="700">P1: R2를 추가로 요청 (대기 중)</text>
+
+  <!-- P2 wants R1 -->
+  <path d="M 560 340 C 400 400, 260 400, 205 340" stroke="#DC2626" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#a12)"/>
+  <text x="300" y="415" font-size="11.5" fill="#DC2626" font-weight="700">P2: R1을 추가로 요청 (대기 중)</text>
+
+  <text x="380" y="250" font-size="13" fill="#DC2626" font-weight="700" text-anchor="middle">🔒 서로가 상대의 자원을 기다리며 영원히 멈춤</text>
+
+  <!-- 4 conditions -->
+  <rect x="30" y="400" width="700" height="65" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="50" y="422" font-size="12.5" font-weight="700" fill="#1F2937">이 상황이 성립하려면 4가지 조건이 동시에 필요하다</text>
+  <text x="50" y="444" font-size="12" fill="#374151">① 상호배제(자원 독점) ② 점유대기(가진 채로 또 요청) ③ 비선점(뺏을 수 없음) ④ 순환대기(뺑뺑 도는 요청 사슬)</text>
+  <text x="50" y="458" font-size="11" fill="#6B7280">→ 넷 중 하나만 깨도 Deadlock을 막을 수 있다 (Deadlock Prevention의 원리)</text>
+
+  <defs>
+    <marker id="a11" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#4F46E5"/></marker>
+    <marker id="a12" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#DC2626"/></marker>
+  </defs>
+</svg>
