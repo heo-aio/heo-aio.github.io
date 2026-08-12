@@ -1,0 +1,37 @@
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <rect width="700" height="300" fill="#ffffff"/>
+  <text x="350" y="28" text-anchor="middle" font-size="14" fill="#08060d" font-weight="600">useState vs useRef - 값은 둘 다 유지되지만, 화면 반영이 다르다</text>
+
+  <!-- useState -->
+  <rect x="30" y="55" width="300" height="220" rx="10" fill="#f4f3ec" stroke="#aa3bff" stroke-width="1.5"/>
+  <text x="180" y="82" text-anchor="middle" font-size="13" fill="#aa3bff" font-weight="700">useState</text>
+
+  <rect x="55" y="98" width="250" height="36" rx="6" fill="#ffffff" stroke="#e5e4e7"/>
+  <text x="180" y="120" text-anchor="middle" font-size="10.5" font-family="ui-monospace, monospace" fill="#08060d">setVal(val + 1)</text>
+  <line x1="180" y1="134" x2="180" y2="156" stroke="#aa3bff" stroke-width="1.5"/>
+  <polygon points="180,156 175,148 185,148" fill="#aa3bff"/>
+
+  <rect x="55" y="159" width="250" height="36" rx="6" fill="#ffffff" stroke="#aa3bff" stroke-width="1.5"/>
+  <text x="180" y="181" text-anchor="middle" font-size="10.5" fill="#aa3bff" font-weight="600">컴포넌트 리렌더링 ↻</text>
+  <line x1="180" y1="195" x2="180" y2="217" stroke="#aa3bff" stroke-width="1.5"/>
+  <polygon points="180,217 175,209 185,209" fill="#aa3bff"/>
+
+  <rect x="55" y="220" width="250" height="36" rx="6" fill="#ffffff" stroke="#e5e4e7"/>
+  <text x="180" y="242" text-anchor="middle" font-size="10.5" fill="#08060d">화면 즉시 갱신</text>
+
+  <!-- useRef -->
+  <rect x="370" y="55" width="300" height="220" rx="10" fill="#f4f3ec" stroke="#e5e4e7" stroke-width="1.5"/>
+  <text x="520" y="82" text-anchor="middle" font-size="13" fill="#08060d" font-weight="700">useRef</text>
+
+  <rect x="395" y="98" width="250" height="36" rx="6" fill="#ffffff" stroke="#e5e4e7"/>
+  <text x="520" y="120" text-anchor="middle" font-size="10.5" font-family="ui-monospace, monospace" fill="#08060d">ref.current += 1</text>
+  <line x1="520" y1="134" x2="520" y2="217" stroke="#6b6375" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="580" y="180" font-size="9.5" fill="#6b6375">리렌더링</text>
+  <text x="580" y="192" font-size="9.5" fill="#6b6375">트리거 없음</text>
+  <polygon points="520,217 515,209 525,209" fill="#6b6375"/>
+
+  <rect x="395" y="220" width="250" height="36" rx="6" fill="#ffffff" stroke="#e5e4e7"/>
+  <text x="520" y="242" text-anchor="middle" font-size="10.5" fill="#08060d">값은 바뀌었지만 화면은 그대로</text>
+
+  <text x="350" y="292" text-anchor="middle" font-size="10.5" fill="#6b6375" font-style="italic">useRef는 "리렌더링 없이 값을 기억하거나 DOM에 접근"할 때 쓴다</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <rect width="700" height="320" fill="#ffffff"/>
+  <text x="350" y="28" text-anchor="middle" font-size="14" fill="#08060d" font-weight="600">Props vs State - 값은 어디서 오고, 누가 리렌더링을 일으키나</text>
+
+  <!-- Props side -->
+  <rect x="30" y="55" width="300" height="235" rx="10" fill="#f4f3ec" stroke="#e5e4e7" stroke-width="1.5"/>
+  <text x="180" y="82" text-anchor="middle" font-size="13" fill="#08060d" font-weight="700">Props</text>
+  <text x="180" y="100" text-anchor="middle" font-size="10.5" fill="#6b6375">부모 → 자식, 단방향 전달</text>
+
+  <rect x="55" y="115" width="250" height="42" rx="6" fill="#ffffff" stroke="#e5e4e7"/>
+  <text x="180" y="140" text-anchor="middle" font-size="11" font-family="ui-monospace, monospace" fill="#08060d">App (부모)</text>
+  <line x1="180" y1="157" x2="180" y2="183" stroke="#6b6375" stroke-width="1.5"/>
+  <text x="195" y="174" font-size="9.5" fill="#6b6375">name="..."</text>
+  <polygon points="180,183 175,175 185,175" fill="#6b6375"/>
+
+  <rect x="55" y="186" width="250" height="42" rx="6" fill="#ffffff" stroke="#aa3bff" stroke-width="1.5"/>
+  <text x="180" y="211" text-anchor="middle" font-size="11" font-family="ui-monospace, monospace" fill="#08060d">PropBtn (자식)</text>
+
+  <text x="55" y="250" font-size="10.5" fill="#08060d">• 자식은 받은 값을 못 바꾼다</text>
+  <text x="55" y="266" font-size="10.5" fill="#08060d">• 값이 바뀌려면 부모가 새로 내려줘야</text>
+  <text x="55" y="282" font-size="10.5" fill="#08060d" font-weight="600">→ 읽기 전용, 위→아래 흐름</text>
+
+  <!-- State side -->
+  <rect x="370" y="55" width="300" height="235" rx="10" fill="#f4f3ec" stroke="#aa3bff" stroke-width="1.5"/>
+  <text x="520" y="82" text-anchor="middle" font-size="13" fill="#aa3bff" font-weight="700">State (useState)</text>
+  <text x="520" y="100" text-anchor="middle" font-size="10.5" fill="#6b6375">컴포넌트 내부에서 자기 자신 관리</text>
+
+  <rect x="395" y="115" width="250" height="46" rx="6" fill="#ffffff" stroke="#e5e4e7"/>
+  <text x="520" y="134" text-anchor="middle" font-size="10.5" font-family="ui-monospace, monospace" fill="#08060d">const [cnt, setCnt]</text>
+  <text x="520" y="150" text-anchor="middle" font-size="10.5" font-family="ui-monospace, monospace" fill="#08060d">= useState(100)</text>
+
+  <text x="520" y="182" text-anchor="middle" font-size="10" fill="#6b6375">setCnt(cnt-1) 호출</text>
+  <line x1="520" y1="188" x2="520" y2="205" stroke="#aa3bff" stroke-width="1.5"/>
+  <polygon points="520,205 515,197 525,197" fill="#aa3bff"/>
+
+  <rect x="395" y="208" width="250" height="38" rx="6" fill="#ffffff" stroke="#aa3bff" stroke-width="1.5"/>
+  <text x="520" y="231" text-anchor="middle" font-size="10.5" fill="#aa3bff" font-weight="600">컴포넌트 리렌더링 ↻</text>
+
+  <text x="395" y="264" font-size="10.5" fill="#08060d">• setter로 바꿔야 리렌더링 발생</text>
+  <text x="395" y="280" font-size="10.5" fill="#08060d" font-weight="600">→ let cnt-- 는 값만 바뀌고 화면은 그대로</text>
+
+  <line x1="330" y1="170" x2="370" y2="170" stroke="none"/>
+</svg>

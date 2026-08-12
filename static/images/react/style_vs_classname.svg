@@ -1,0 +1,39 @@
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <rect width="700" height="300" fill="#ffffff"/>
+  <text x="350" y="28" text-anchor="middle" font-size="14" fill="#08060d" font-weight="600">JSX에서 스타일을 입히는 두 가지 방법</text>
+
+  <!-- Left: inline style -->
+  <rect x="30" y="55" width="300" height="215" rx="10" fill="#f4f3ec" stroke="#aa3bff" stroke-width="1.5"/>
+  <text x="180" y="82" text-anchor="middle" font-size="13" fill="#aa3bff" font-weight="700">style={ {...} }</text>
+  <text x="180" y="100" text-anchor="middle" font-size="10.5" fill="#6b6375">인라인 스타일 (JS 객체)</text>
+
+  <rect x="50" y="112" width="260" height="66" rx="6" fill="#ffffff" stroke="#e5e4e7"/>
+  <text x="62" y="130" font-size="10.5" font-family="ui-monospace, monospace" fill="#08060d">style={ {</text>
+  <text x="72" y="146" font-size="10.5" font-family="ui-monospace, monospace" fill="#08060d">color: 'red',</text>
+  <text x="72" y="162" font-size="10.5" font-family="ui-monospace, monospace" fill="#08060d">fontSize: 26</text>
+  <text x="62" y="176" font-size="10.5" font-family="ui-monospace, monospace" fill="#08060d">} }</text>
+
+  <text x="50" y="196" font-size="10.5" fill="#08060d">• 바깥 { } : JS 표현식 삽입</text>
+  <text x="50" y="212" font-size="10.5" fill="#08060d">• 안쪽 { } : 객체 리터럴</text>
+  <text x="50" y="228" font-size="10.5" fill="#08060d">• 속성명은 camelCase</text>
+  <text x="50" y="244" font-size="10.5" fill="#08060d">• 값은 문자열/숫자</text>
+  <text x="50" y="260" font-size="10.5" fill="#aa3bff" font-weight="600">→ CSS보다 항상 우선 적용</text>
+
+  <!-- Right: className -->
+  <rect x="370" y="55" width="300" height="215" rx="10" fill="#f4f3ec" stroke="#e5e4e7" stroke-width="1.5"/>
+  <text x="520" y="82" text-anchor="middle" font-size="13" fill="#08060d" font-weight="700">className="..."</text>
+  <text x="520" y="100" text-anchor="middle" font-size="10.5" fill="#6b6375">외부 CSS 파일 연결</text>
+
+  <rect x="390" y="112" width="260" height="66" rx="6" fill="#ffffff" stroke="#e5e4e7"/>
+  <text x="402" y="130" font-size="10.5" font-family="ui-monospace, monospace" fill="#08060d">className="App-title"</text>
+  <text x="402" y="150" font-size="10.5" font-family="ui-monospace, monospace" fill="#6b6375">/* App.css */</text>
+  <text x="402" y="166" font-size="10.5" font-family="ui-monospace, monospace" fill="#08060d">.App-title { color: white }</text>
+
+  <text x="390" y="196" font-size="10.5" fill="#08060d">• HTML의 class와 동일한 역할</text>
+  <text x="390" y="212" font-size="10.5" fill="#08060d">• 여러 컴포넌트에서 재사용 가능</text>
+  <text x="390" y="228" font-size="10.5" fill="#08060d">• 일반 CSS 캐스케이딩 규칙 적용</text>
+  <text x="390" y="244" font-size="10.5" fill="#08060d">• 유지보수·재사용성에 유리</text>
+  <text x="390" y="260" font-size="10.5" fill="#08060d" font-weight="600">→ 대부분의 실무 스타일링 방식</text>
+
+  <text x="350" y="290" text-anchor="middle" font-size="10.5" fill="#6b6375" font-style="italic">보통은 className이 기본, 동적으로 값이 바뀌는 스타일만 인라인으로</text>
+</svg>
