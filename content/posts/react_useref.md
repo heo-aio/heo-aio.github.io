@@ -1,6 +1,6 @@
 +++
 title = "[React] useRef - state와 뭐가 다른가, DOM에 직접 접근하기"
-date = 2026-08-13
+date = 2026-08-12
 draft = false
 tags = ["React", "useRef", "hooks", "클로저"]
 categories = ["dev"]

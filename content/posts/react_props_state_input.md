@@ -1,6 +1,6 @@
 +++
 title = "[React] Props vs State, 그리고 제어 컴포넌트 - 데이터는 누가 갖고, 화면은 언제 다시 그려지나"
-date = 2026-08-13
+date = 2026-08-12
 draft = false
 tags = ["React", "Props", "State", "useState", "제어컴포넌트"]
 categories = ["dev"]

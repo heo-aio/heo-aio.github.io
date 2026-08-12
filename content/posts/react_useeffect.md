@@ -1,6 +1,6 @@
 +++
 title = "[React] useEffect - 컴포넌트 생명주기와 의존성 배열, cleanup 함수까지"
-date = 2026-08-13
+date = 2026-08-12
 draft = false
 tags = ["React", "useEffect", "hooks", "생명주기"]
 categories = ["dev"]
