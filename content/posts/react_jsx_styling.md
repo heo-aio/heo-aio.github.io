@@ -1,6 +1,6 @@
 +++
 title = "[React] JSX 문법 감 잡기 - 태그를 값으로 다루기, 조건부 렌더링, 스타일링 두 가지 방법"
-date = 2026-08-13T20:00:00+09:00
+date = 2026-08-13
 draft = false
 tags = ["React", "JSX", "스타일링"]
 categories = ["dev"]
