@@ -1,0 +1,37 @@
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <defs>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#6b6375" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="700" height="320" fill="#ffffff"/>
+  <text x="350" y="26" text-anchor="middle" font-size="14" fill="#08060d" font-weight="600">자식이 부모의 state를 "직접" 못 바꾸는데, 어떻게 바꾸는가</text>
+
+  <!-- App (parent) - left -->
+  <rect x="30" y="130" width="190" height="80" rx="10" fill="#f4f3ec" stroke="#aa3bff" stroke-width="1.5"/>
+  <text x="125" y="158" text-anchor="middle" font-size="12.5" fill="#aa3bff" font-weight="700">App (부모)</text>
+  <text x="125" y="176" text-anchor="middle" font-size="9.5" fill="#6b6375">const [list, setList]</text>
+  <text x="125" y="191" text-anchor="middle" font-size="9.5" fill="#6b6375">= useState([])</text>
+  <text x="125" y="201" text-anchor="middle" font-size="9" fill="#08060d" font-weight="600">진짜 데이터의 주인</text>
+
+  <!-- Input (child) - right -->
+  <rect x="480" y="130" width="190" height="80" rx="10" fill="#f4f3ec" stroke="#e5e4e7" stroke-width="1.5"/>
+  <text x="575" y="158" text-anchor="middle" font-size="12.5" fill="#08060d" font-weight="700">Input (자식)</text>
+  <text x="575" y="176" text-anchor="middle" font-size="9.5" fill="#6b6375">state 없음</text>
+  <text x="575" y="191" text-anchor="middle" font-size="9.5" fill="#6b6375">받은 함수만 있음</text>
+
+  <!-- top path: App -> Input (props down) -->
+  <path d="M220 148 C 350 90, 350 90, 480 148" fill="none" stroke="#6b6375" stroke-width="1.5" marker-end="url(#arrowB)"/>
+  <rect x="260" y="55" width="180" height="46" rx="6" fill="#ffffff" stroke="#e5e4e7"/>
+  <text x="350" y="73" text-anchor="middle" font-size="10.5" fill="#08060d" font-weight="600">① Props로 함수 전달</text>
+  <text x="350" y="89" text-anchor="middle" font-size="9" font-family="ui-monospace, monospace" fill="#6b6375">onInsert={"{onInsert}"}</text>
+
+  <!-- bottom path: Input -> App (callback call, up) -->
+  <path d="M480 192 C 350 250, 350 250, 220 192" fill="none" stroke="#aa3bff" stroke-width="1.5" marker-end="url(#arrowB)"/>
+  <rect x="255" y="235" width="190" height="60" rx="6" fill="#ffffff" stroke="#aa3bff" stroke-width="1.5"/>
+  <text x="350" y="254" text-anchor="middle" font-size="10.5" fill="#aa3bff" font-weight="600">② 클릭/Enter → onInsert() 호출</text>
+  <text x="350" y="270" text-anchor="middle" font-size="9.5" fill="#6b6375">③ 함수 내부에서 setList(...) 실행</text>
+  <text x="350" y="286" text-anchor="middle" font-size="9.5" fill="#6b6375">④ App이 리렌더링됨</text>
+
+  <text x="350" y="315" text-anchor="middle" font-size="10" fill="#6b6375" font-style="italic">자식은 값을 안 바꾼다 - "바꿔달라"는 요청(함수 호출)만 부모에게 보낸다</text>
+</svg>
