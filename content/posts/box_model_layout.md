@@ -27,7 +27,7 @@ HTML 요소는 전부 사각형 박스로 취급되는데, 이 박스는 안쪽�
 - **content**: 실제 내용물이 들어가는 영역. `width`, `height`로 크기 결정
 - **padding**: border 안쪽의 여백
 - **border**: 테두리
-- **margin**: border 바깥쪽의 여백
+- **margin**: border 바깥쪽의 여백d
 
 오늘 실습(`실습1.html`)에서 쓴 코드는 이렇다.
 
