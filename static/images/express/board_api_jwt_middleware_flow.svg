@@ -1,0 +1,72 @@
+<svg viewBox="0 0 920 480" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#dc6b6b"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4caf82"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="920" height="480" fill="#ffffff"/>
+
+  <!-- title -->
+  <text x="460" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#2e2e33">
+    GET /posts 요청이 인증 미들웨어를 통과하는 흐름
+  </text>
+
+  <!-- Client -->
+  <rect x="30" y="90" width="160" height="70" rx="10" fill="#2e2e33"/>
+  <text x="110" y="120" text-anchor="middle" font-size="14" fill="#ffffff" font-weight="600">클라이언트</text>
+  <text x="110" y="140" text-anchor="middle" font-size="11" fill="#c9c9d1">Authorization: 토큰</text>
+
+  <line x1="190" y1="125" x2="270" y2="125" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Middleware box -->
+  <rect x="270" y="70" width="220" height="110" rx="10" fill="#eef0f5" stroke="#8b90a3" stroke-width="1.5"/>
+  <text x="380" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#2e2e33">authMiddleware (getToken)</text>
+  <text x="380" y="118" text-anchor="middle" font-size="11" fill="#4b4f5c">req.headers.authorization</text>
+  <text x="380" y="136" text-anchor="middle" font-size="11" fill="#4b4f5c">토큰 없음 → 401</text>
+  <text x="380" y="154" text-anchor="middle" font-size="11" fill="#4b4f5c">토큰 있음 → jwt.verify()</text>
+
+  <line x1="490" y1="125" x2="570" y2="125" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Decision diamond -->
+  <polygon points="670,60 780,125 670,190 560,125" fill="#fff7e6" stroke="#d9a441" stroke-width="1.5"/>
+  <text x="670" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#2e2e33">토큰이</text>
+  <text x="670" y="136" text-anchor="middle" font-size="12" font-weight="700" fill="#2e2e33">유효한가?</text>
+
+  <!-- Success path -->
+  <line x1="700" y1="150" x2="700" y2="260" stroke="#4caf82" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="720" y="205" font-size="11" fill="#2f8f63" font-weight="600">유효함</text>
+
+  <rect x="560" y="260" width="280" height="80" rx="10" fill="#e9f7f0" stroke="#4caf82" stroke-width="1.5"/>
+  <text x="700" y="286" text-anchor="middle" font-size="13" font-weight="700" fill="#1f6b47">next()</text>
+  <text x="700" y="306" text-anchor="middle" font-size="11" fill="#2f5f47">req.user = decoded 정보 저장</text>
+  <text x="700" y="324" text-anchor="middle" font-size="11" fill="#2f5f47">라우터 핸들러로 이동</text>
+
+  <line x1="700" y1="340" x2="700" y2="400" stroke="#4caf82" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <rect x="560" y="400" width="280" height="60" rx="10" fill="#2e2e33"/>
+  <text x="700" y="425" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">router.get("/", ..., 핸들러)</text>
+  <text x="700" y="444" text-anchor="middle" font-size="11" fill="#c9c9d1">res.json(posts) 응답</text>
+
+  <!-- Fail path -->
+  <line x1="640" y1="150" x2="380" y2="260" stroke="#dc6b6b" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <rect x="432" y="208" width="150" height="18" fill="#ffffff"/>
+  <text x="440" y="221" font-size="11" fill="#c14f4f" font-weight="600">없음 / 만료 / 위조</text>
+
+  <rect x="120" y="260" width="280" height="90" rx="10" fill="#fbeaea" stroke="#dc6b6b" stroke-width="1.5"/>
+  <text x="260" y="288" text-anchor="middle" font-size="13" font-weight="700" fill="#a13636">res.status(401)</text>
+  <text x="260" y="308" text-anchor="middle" font-size="11" fill="#7a3030">"토큰이 없습니다" /</text>
+  <text x="260" y="326" text-anchor="middle" font-size="11" fill="#7a3030">"유효하지 않은 토큰입니다"</text>
+
+  <!-- Legend -->
+  <line x1="120" y1="440" x2="150" y2="440" stroke="#4caf82" stroke-width="3"/>
+  <text x="158" y="444" font-size="11" fill="#2f5f47">통과 (next 호출)</text>
+  <line x1="290" y1="440" x2="320" y2="440" stroke="#dc6b6b" stroke-width="3"/>
+  <text x="328" y="444" font-size="11" fill="#7a3030">차단 (401 응답)</text>
+</svg>
