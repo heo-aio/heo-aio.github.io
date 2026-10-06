@@ -1,10 +1,10 @@
 +++
-title: "[LlamaIndex] RAG 저장/질문 코드 분석 - from_documents vs from_vector_store"
-date: 2026-09-26
-draft: false
-categories: ["dev"]
-tags: ["LlamaIndex", "RAG", "ChromaDB", "Ollama", "Python", "LLM"]
-summary: "예시 코드를 따라 치긴 했는데 context_str은 f-string도 아닌데 어떻게 채워지는지, index는 번호도 아닌데 왜 index인지 감이 안 왔다. 4단계 실습 파일을 하나씩 뜯어보면서 정리했다."
+title= "[LlamaIndex] RAG 저장/질문 코드 분석 - from_documents vs from_vector_store"
+date= 2026-09-26
+draft= false
+categories= ["dev"]
+tags= ["LlamaIndex", "RAG", "ChromaDB", "Ollama", "Python", "LLM"]
+summary= "예시 코드를 따라 치긴 했는데 context_str은 f-string도 아닌데 어떻게 채워지는지, index는 번호도 아닌데 왜 index인지 감이 안 왔다. 4단계 실습 파일을 하나씩 뜯어보면서 정리했다."
 +++
 
 강의에서 LlamaIndex + ChromaDB + Ollama로 소설 Q&A(RAG)를 만들어봤다. 코드는 돌아가는데 "이게 왜 되지?" 싶은 지점이 계속 나왔다. `{context_str}`은 f-string도 아닌데 누가 채워주는지, `index`는 번호가 아닌데 왜 index라고 부르는지 같은 것들이다. 실습 파일 4개를 순서대로 다시 열어보면서 정리했다.
