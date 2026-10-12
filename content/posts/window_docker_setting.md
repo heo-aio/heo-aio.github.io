@@ -1,10 +1,10 @@
 +++
-title= "[Docker] Windows OS에서 Docker 쓰려면? WSL2 설정부터~
-date= 2026-10-12
-draft= false
-categories= ["dev"]
-tags= ["Docker", "WSL2", "Windows", "Docker Desktop", "환경설정"]
-summary= "Docker Desktop만 깔면 되는 줄 알았는데 WSL2부터 켜야 했다. 명령어를 순서대로 따라 치면서 Windows에서 Docker를 돌리기까지의 과정을 정리했다."
+title = "[Docker] Windows OS에서 Docker 쓰려면? WSL2 설정부터~"
+date = 2026-10-09
+draft = false
+categories = ["dev"]
+tags = ["Docker", "WSL2", "Windows", "Docker Desktop", "환경설정"]
+summary = "Docker Desktop만 깔면 되는 줄 알았는데 WSL2부터 켜야 했다. 명령어를 순서대로 따라 치면서 Windows에서 Docker를 돌리기까지의 과정을 정리했다."
 +++
 
 AI 서비스를 만들다 보면 "내 컴퓨터에선 되는데요?" 문제가 꼭 나온다고 해서 Docker를 써보기로 했다. 그런데 Windows에서는 Docker Desktop 설치 파일만 받으면 끝이 아니었다. **WSL2**라는 게 먼저 켜져 있어야 한다. 명령어가 한꺼번에 나와서 "이게 다 뭐지?" 싶었는데, 하나씩 의미를 확인하면서 정리했다.
