@@ -2,7 +2,7 @@
 title = "[Express] JWT로 로그인 인증 흐름 정리 - sign, verify, 그리고 KEY 문제"
 date = 2026-08-28
 draft = false
-tags = ["Express", "Node.js", "JWT", "백엔드"]
+tags = ["Express", "Node.js", "JWT"]
 categories = ["dev"]
 math = false
 +++

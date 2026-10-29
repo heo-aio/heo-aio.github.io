@@ -2,7 +2,7 @@
 title = "[프로젝트] 학생 건강상태 분류 (4/4) — 스태킹 & 최종 스퍼트"
 date = 2026-07-14T14:00:00+09:00
 draft = false
-tags = ["Python", "Machine Learning", "Kaggle", "Stacking", "Optuna", "후처리", "팀프로젝트"]
+tags = ["Machine Learning", "Kaggle", "Ensemble", "팀프로젝트"]
 categories = ["Project"]
 +++
 

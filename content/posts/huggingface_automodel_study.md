@@ -2,7 +2,7 @@
 title = "[Hugging Face] AutoModel vs AutoModelForXXX - 헤드, hidden_states, generate()까지 파고들기"
 date = 2026-09-03
 draft = false
-tags = ["HuggingFace", "Transformers", "NLP", "AI"]
+tags = ["HuggingFace", "Transformers"]
 categories = ["dev"]
 math = false
 +++

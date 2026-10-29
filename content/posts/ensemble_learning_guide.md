@@ -2,7 +2,7 @@
 title = "[개념정리] 앙상블 학습 총정리 — Bagging, Boosting, Stacking 제대로 이해하기"
 date = 2026-07-15T10:00:00+09:00
 draft = false
-tags = ["Python", "Machine Learning", "앙상블", "Bagging", "Boosting", "Stacking", "XGBoost", "LightGBM", "CatBoost"]
+tags = ["Python", "Machine Learning", "Ensemble"]
 categories = ["ml"]
 math = true
 +++

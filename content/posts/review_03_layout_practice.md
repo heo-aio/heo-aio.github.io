@@ -2,7 +2,7 @@
 title = "[HTML/CSS] 복습과제 3개로 다시 잡은 레이아웃 감각 - inline-block, float, grid"
 date = 2026-07-28T02:00:00+09:00
 draft = false
-tags = ["HTML", "CSS", "복습", "레이아웃", "grid"]
+tags = ["HTML", "CSS", "레이아웃"]
 categories = ["dev"]
 math = false
 +++

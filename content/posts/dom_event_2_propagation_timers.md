@@ -2,7 +2,7 @@
 title = "[JavaScript] DOM과 이벤트 2 - 캡처링/버블링, 이벤트 위임, setInterval/setTimeout"
 date = 2026-08-06T18:00:00+09:00
 draft = false
-tags = ["JavaScript", "DOM", "이벤트", "이벤트위임", "타이머", "웹개발"]
+tags = ["JavaScript", "DOM", "이벤트"]
 categories = ["dev"]
 math = false
 +++

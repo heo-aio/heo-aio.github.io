@@ -3,7 +3,7 @@ title = "[RAG] Haystack 정리: connect로 이어 붙이고 YAML로 저장하는
 date = 2026-10-28
 draft = false
 categories = ["dev"]
-tags = ["RAG", "Haystack", "Pipeline", "Component", "하이브리드검색", "리랭킹", "YAML", "Python"]
+tags = ["RAG", "Haystack", "Python"]
 summary = "RAG 프레임워크 비교 수업의 두 번째, Haystack을 정리했다. 컴포넌트를 connect로 명시적으로 연결하면 뭐가 좋은지, BM25와 임베딩 검색을 합치는 하이브리드 구성, 파이프라인을 YAML로 저장하고 복원하는 방법을 정리했다."
 +++
 

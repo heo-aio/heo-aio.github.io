@@ -2,7 +2,7 @@
 title = "[Redux] action, payload 개념 정리 - 실습 카운터 코드 리뷰까지"
 date = 2026-08-25
 draft = false
-tags = ["Redux", "Redux Toolkit", "React", "상태관리"]
+tags = ["Redux", "React"]
 categories = ["dev"]
 math = false
 +++

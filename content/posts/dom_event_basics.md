@@ -2,7 +2,7 @@
 title = "[JavaScript] DOM과 이벤트 1 - 선택자, 속성 제어, addEventListener, this vs target까지"
 date = 2026-08-06T14:00:00+09:00
 draft = false
-tags = ["JavaScript", "DOM", "이벤트", "addEventListener", "웹개발"]
+tags = ["JavaScript", "DOM", "이벤트"]
 categories = ["dev"]
 math = false
 +++

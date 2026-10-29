@@ -2,7 +2,7 @@
 title = "[Express + Mongoose] 회원 CRUD API 만들면서 정리한 것들"
 date = 2026-08-28
 draft = false
-tags = ["Express", "Node.js", "MongoDB", "Mongoose", "백엔드"]
+tags = ["Express", "Node.js", "MongoDB"]
 categories = ["dev"]
 math = false
 +++

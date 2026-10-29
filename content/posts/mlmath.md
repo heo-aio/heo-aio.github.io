@@ -2,7 +2,7 @@
 title = "[ML] 머신러닝에서 미적분을 배우는 이유 (도함수부터 테일러 급수까지)"
 date = 2026-07-02T14:00:00+09:00
 draft = false
-tags = ["Machine Learning", "Calculus", "Deep Learning", "Linear Algebra", "Python", "PyTorch"]
+tags = ["Machine Learning", "Deep Learning", "Linear Algebra", "Python"]
 categories = ["ml"]
 math = true
 +++

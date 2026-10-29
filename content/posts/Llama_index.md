@@ -3,7 +3,7 @@ title= "[LlamaIndex] RAG 저장/질문 코드 분석 - from_documents vs from_ve
 date= 2026-09-26
 draft= false
 categories= ["dev"]
-tags= ["LlamaIndex", "RAG", "ChromaDB", "Ollama", "Python", "LLM"]
+tags = ["LlamaIndex", "RAG", "Ollama", "LLM"]
 summary= "예시 코드를 따라 치긴 했는데 context_str은 f-string도 아닌데 어떻게 채워지는지, index는 번호도 아닌데 왜 index인지 감이 안 왔다. 4단계 실습 파일을 하나씩 뜯어보면서 정리했다."
 +++
 

@@ -3,7 +3,7 @@ title = "[Git] GitHub 협업 실습 - 브랜치 생성부터 Pull Request, Merge
 date = 2026-10-10
 draft = false
 categories = ["dev"]
-tags = ["Git", "GitHub", "Pull Request", "Branch", "Merge", "협업", "git log"]
+tags = ["Git", "GitHub", "협업"]
 summary = "그동안 아무 생각 없이 add, commit, push만 했는데, 협업의 정석 흐름을 직접 따라 해봤다. feature 브랜치를 만들고, Pull Request를 올리고, merge한 뒤 브랜치를 정리하기까지의 과정을 정리했다."
 +++
 

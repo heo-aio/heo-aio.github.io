@@ -2,7 +2,7 @@
 title = "[ML] 머신러닝 프로젝트 Process 학습 및 복습 - Train/Test Split, StandardScaler, Pipeline"
 date = 2026-07-04
 draft = false
-tags = ["Python", "Machine Learning", "Scikit-learn", "Pipeline", "StandardScaler", "Kaggle"]
+tags = ["Python", "Machine Learning", "Scikit-learn", "Kaggle"]
 categories = ["ml"]
 +++
 

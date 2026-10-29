@@ -2,7 +2,7 @@
 title = "[ML 복습] 지도학습 — 회귀와 분류 정리"
 date = 2026-07-22T10:00:00+09:00
 draft = false
-tags = ["Python", "Machine Learning", "Scikit-learn", "지도학습", "복습"]
+tags = ["Python", "Machine Learning", "Scikit-learn"]
 categories = ["ml"]
 math = true
 +++

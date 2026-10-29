@@ -2,7 +2,7 @@
 title = "[프로젝트] 학생 건강상태 분류 (3/4) — 부스팅 앙상블 (OOF, Fold 평균)"
 date = 2026-07-14T10:00:00+09:00
 draft = false
-tags = ["Python", "Machine Learning", "Kaggle", "Ensemble", "LightGBM", "XGBoost", "CatBoost", "팀프로젝트"]
+tags = ["Machine Learning", "Kaggle", "Ensemble", "팀프로젝트"]
 categories = ["Project"]
 +++
 

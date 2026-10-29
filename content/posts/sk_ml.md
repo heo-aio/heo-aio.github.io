@@ -2,7 +2,7 @@
 title = "[ML] Scikit-learn 핵심 개념 정리 - 데이터 전처리부터 모델 학습까지"
 date = 2026-07-03
 draft = false
-tags = ["Python", "Scikit-learn", "Machine Learning", "Data Science"]
+tags = ["Python", "Scikit-learn", "Machine Learning"]
 categories = ["ml"]
 math = true
 +++

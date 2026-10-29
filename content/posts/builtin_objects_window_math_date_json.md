@@ -2,7 +2,7 @@
 title = "[JavaScript] 내장 객체 정리 - window, Math, Date, JSON"
 date = 2026-08-06T21:00:00+09:00
 draft = false
-tags = ["JavaScript", "내장객체", "Date", "JSON", "window"]
+tags = ["JavaScript", "내장객체"]
 categories = ["dev"]
 math = false
 +++

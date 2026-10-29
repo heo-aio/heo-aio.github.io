@@ -2,7 +2,7 @@
 title = "[HTML/CSS] 미디어쿼리로 반응형 레이아웃 만들기 - viewport, 상속, 실전 적용까지"
 date = 2026-07-28T10:00:00+09:00
 draft = false
-tags = ["HTML", "CSS", "미디어쿼리", "반응형웹", "레이아웃"]
+tags = ["HTML", "CSS", "레이아웃"]
 categories = ["dev"]
 math = false
 +++

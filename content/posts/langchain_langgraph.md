@@ -3,7 +3,7 @@ title = "[LangGraph] RAG에서 에이전트까지 - 도구 호출 루프와 Stat
 date = 2026-10-12
 draft = false
 categories = ["dev"]
-tags = ["LangChain", "LangGraph", "RAG", "Agent", "ToolNode", "bind_tools", "add_messages", "Python"]
+tags = ["LangChain", "LangGraph", "RAG", "Python"]
 summary = "RAG 코드를 따라 치다가 'messages[-1].content는 어떻게 아는 거지?', 'bind_tools가 왜 필요하지?'가 궁금해서 하나씩 파고들었다. 도구 호출 루프, State와 add_messages, LangChain과 LangGraph의 차이, 그리고 오늘 만난 에러 3개를 정리했다."
 +++
 

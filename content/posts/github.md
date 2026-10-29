@@ -3,7 +3,7 @@ title = "[Git] Git과 GitHub 기초 - 인증, 브랜치, 병합까지 한 번에
 date = 2026-10-10
 draft = false
 categories = ["dev"]
-tags = ["Git", "GitHub", "SSH", "Branch", "Merge", "gitignore", "협업"]
+tags = ["Git", "GitHub", "협업"]
 summary = "GitHub은 알고 있다고 생각했는데, 강의 커리큘럼을 따라가다 보니 헷갈리는 게 많았다. Git과 GitHub의 차이부터 SSH 인증, 브랜치, 병합 전략까지 공부하면서 궁금했던 점 위주로 정리했다."
 +++
 

@@ -2,7 +2,7 @@
 title = "[ML] Titanic 데이터셋 실습 결측치(Missing Value)와 이상치(Outlier) 처리"
 date = 2026-07-04
 draft = false
-tags = ["Python", "Machine Learning", "Pandas", "EDA", "Data Preprocessing", "Titanic"]
+tags = ["Machine Learning", "Pandas", "EDA", "Data Preprocessing"]
 categories = ["ml"]
 math = true
 +++

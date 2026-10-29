@@ -2,7 +2,7 @@
 title = "[JavaScript] 실행 컨텍스트와 this - 호출 스택, apply/call/bind, 화살표 함수의 this"
 date = 2026-08-06T22:30:00+09:00
 draft = false
-tags = ["JavaScript", "실행컨텍스트", "this", "apply", "call", "bind"]
+tags = ["JavaScript", "실행컨텍스트"]
 categories = ["dev"]
 math = false
 +++

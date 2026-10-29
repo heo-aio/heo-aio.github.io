@@ -2,7 +2,7 @@
 title = "[Express] 게시판 API 미니프로젝트 - CRUD부터 JWT까지"
 date = 2026-08-31
 draft = false
-tags = ["Express", "Node.js", "JWT", "백엔드"]
+tags = ["Express", "Node.js", "JWT"]
 categories = ["dev"]
 math = false
 +++

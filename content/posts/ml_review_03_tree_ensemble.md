@@ -2,7 +2,7 @@
 title = "[ML 복습] 의사결정나무와 앙상블 (Voting·Bagging·Boosting)"
 date = 2026-07-22T14:00:00+09:00
 draft = false
-tags = ["Python", "Machine Learning", "Decision Tree", "Ensemble", "RandomForest", "복습"]
+tags = ["Python", "Machine Learning", "Ensemble"]
 categories = ["ml"]
 +++
 

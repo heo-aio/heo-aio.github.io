@@ -3,7 +3,7 @@ title = "[RAG] RAGFlow 정리: 코드로 조립하지 않고 띄워서 쓰는 RA
 date = 2026-10-28
 draft = false
 categories = ["dev"]
-tags = ["RAG", "RAGFlow", "Docker", "문서파싱", "OCR", "청킹템플릿", "인용"]
+tags = ["RAG", "RAGFlow", "Docker"]
 summary = "RAG 프레임워크 비교 수업의 세 번째, RAGFlow를 정리했다. 라이브러리가 아니라 Docker로 띄우는 엔드투엔드 엔진이라는 점, 표와 스캔 문서까지 구조를 살려 파싱하는 Deep Document Understanding, 그리고 장단점을 정리했다."
 +++
 

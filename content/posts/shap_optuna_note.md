@@ -2,7 +2,7 @@
 title = "[개념정리] SHAP과 Optuna — 감으로 하던 걸 근거로 바꾸기"
 date = 2026-07-15T10:00:00+09:00
 draft = false
-tags = ["Python", "Machine Learning", "SHAP", "Optuna", "모델해석", "하이퍼파라미터튜닝"]
+tags = ["Python", "Machine Learning", "SHAP", "Optuna"]
 categories = ["ml"]
 math = true
 +++

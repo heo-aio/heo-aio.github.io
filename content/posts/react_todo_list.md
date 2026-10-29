@@ -2,7 +2,7 @@
 title = "[React] Todo 리스트 실습 - 지금까지 배운 걸 다 때려박았더니 진짜 어려웠던 이유"
 date = 2026-08-12T20:00:00+09:00
 draft = false
-tags = ["React", "Props", "State", "useRef", "useEffect", "불변성", "Todo"]
+tags = ["React", "Props"]
 categories = ["dev"]
 math = false
 +++

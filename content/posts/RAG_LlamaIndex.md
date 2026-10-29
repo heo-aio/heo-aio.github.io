@@ -3,7 +3,7 @@ title = "[RAG] LlamaIndex 정리: 문서를 넣고 바로 질의하는 가장 �
 date = 2026-10-28
 draft = false
 categories = ["dev"]
-tags = ["RAG", "LlamaIndex", "VectorStoreIndex", "QueryEngine", "리랭킹", "SummaryIndex", "Python"]
+tags = ["RAG", "LlamaIndex", "Python"]
 summary = "RAG 프레임워크 비교 수업의 첫 번째, LlamaIndex를 정리했다. from_documents 한 줄로 청킹·임베딩·인덱싱이 끝나는 이유, 리랭커를 한 줄로 붙이는 방법, 그리고 '전체 요약'에는 왜 벡터 검색이 부실한지까지 정리했다."
 +++
 

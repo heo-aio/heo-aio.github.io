@@ -2,7 +2,7 @@
 title = "[Data Analysis] Matplotlib, 왜 plt 말고 fig, ax를 써야 할까"
 date = 2026-06-28
 draft = false
-tags = ["Python", "Matplotlib", "Seaborn", "Visualization"]
+tags = ["Python", "Matplotlib", "Visualization"]
 categories = ["data-analysis"]
 math = false
 +++

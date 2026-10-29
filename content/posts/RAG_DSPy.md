@@ -3,7 +3,7 @@ title = "[RAG] DSPy 정리: 프롬프트를 쓰지 않고 컴파일하는 프레
 date = 2026-10-28
 draft = false
 categories = ["dev"]
-tags = ["RAG", "DSPy", "Signature", "Module", "Optimizer", "BootstrapFewShot", "MIPROv2", "프롬프트최적화", "Python"]
+tags = ["RAG", "DSPy", "Python"]
 summary = "RAG 프레임워크 비교 수업의 네 번째, DSPy를 정리했다. 프롬프트 문장을 직접 쓰지 않고 Signature와 Module로 구조만 선언하는 방식, Optimizer가 few-shot 예시를 자동으로 넣어 정확도를 0.60에서 0.80~1.00으로 올린 실험, 그리고 4개 프레임워크 종합 비교까지 정리했다."
 +++
 

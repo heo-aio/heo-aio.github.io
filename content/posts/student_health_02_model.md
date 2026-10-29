@@ -2,7 +2,7 @@
 title = "[프로젝트] 학생 건강상태 분류 (2/4) — 12개 모델 비교 & 모델 선택"
 date = 2026-07-13T14:00:00+09:00
 draft = false
-tags = ["Python", "Machine Learning", "Kaggle", "Scikit-learn", "Pipeline", "모델선택", "팀프로젝트"]
+tags = ["Machine Learning", "Kaggle", "Scikit-learn", "팀프로젝트"]
 categories = ["Project"]
 +++
 

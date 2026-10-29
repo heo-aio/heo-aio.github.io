@@ -3,7 +3,7 @@ title = "[RAG] RAG를 쓸 때와 안 쓸 때, 답변은 얼마나 다를까? (La
 date = 2026-10-15
 draft = false
 categories = ["dev"]
-tags = ["RAG", "LangChain", "Ollama", "Chroma", "RunnablePassthrough", "RunnableParallel", "환각", "Python"]
+tags = ["RAG", "LangChain", "Ollama", "ChromaDB"]
 summary = "같은 질문을 RAG 없이, 그리고 RAG와 함께 던져서 답변을 비교했다. RAG 없이는 그럴듯한 숫자를 지어내고, RAG를 붙이니 PDF 근거로 답했다. 이 차이를 만드는 qa_chain의 딕셔너리 구조(RunnableParallel, RunnablePassthrough)까지 정리했다."
 +++
 

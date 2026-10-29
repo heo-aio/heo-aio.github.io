@@ -2,7 +2,7 @@
 title = "[Python] 코드 컨벤션이랑 패키지 관리, uv까지"
 date = 2026-07-24T10:00:00+09:00
 draft = false
-tags = ["Python", "코드컨벤션", "패키지관리", "uv"]
+tags = ["Python", "코드컨벤션"]
 categories = ["dev"]
 math = false
 +++

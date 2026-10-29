@@ -2,7 +2,7 @@
 title = "[Express] 라우팅 기초 정리 - Router 분리부터 params/query/body, 미들웨어 순서까지"
 date = 2026-08-27
 draft = false
-tags = ["Express", "Node.js", "백엔드"]
+tags = ["Express", "Node.js"]
 categories = ["dev"]
 math = false
 +++

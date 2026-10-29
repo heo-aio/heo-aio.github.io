@@ -2,7 +2,7 @@
 title = "[HTML/CSS] 웹에 생동감 넣기 - transform, transition, animation으로 움직이는 갤러리 만들기"
 date = 2026-07-28T11:00:00+09:00
 draft = false
-tags = ["HTML", "CSS", "transform", "transition", "animation"]
+tags = ["HTML", "CSS"]
 categories = ["dev"]
 math = false
 +++

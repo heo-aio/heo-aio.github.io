@@ -2,7 +2,7 @@
 title = "[ML] Kaggle House Price 데이터로 배우는 머신러닝 프로젝트 전체 프로세스"
 date = 2026-07-07
 draft = false
-tags = ["Python", "Machine Learning", "Kaggle", "Pandas", "EDA", "Scikit-learn", "RandomForest"]
+tags = ["Machine Learning", "Kaggle", "Pandas", "Scikit-learn"]
 categories = ["ml"]
 +++
 

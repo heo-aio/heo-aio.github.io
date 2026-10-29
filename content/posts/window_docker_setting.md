@@ -3,7 +3,7 @@ title = "[Docker] Windows OS에서 Docker 쓰려면? WSL2 설정부터~"
 date = 2026-10-09
 draft = false
 categories = ["dev"]
-tags = ["Docker", "WSL2", "Windows", "Docker Desktop", "환경설정"]
+tags = ["Docker", "Windows"]
 summary = "Docker Desktop만 깔면 되는 줄 알았는데 WSL2부터 켜야 했다. 명령어를 순서대로 따라 치면서 Windows에서 Docker를 돌리기까지의 과정을 정리했다."
 +++
 

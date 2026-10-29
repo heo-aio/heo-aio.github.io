@@ -2,7 +2,7 @@
 title = "[LLM] Hugging Face Transformers vs LangChain - 코드분석"
 date = 2026-09-08
 draft = false
-tags = ["HuggingFace", "LangChain", "LLM", "AI"]
+tags = ["HuggingFace", "LangChain", "LLM"]
 categories = ["dev"]
 math = false
 +++

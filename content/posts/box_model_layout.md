@@ -2,7 +2,7 @@
 title = "[HTML/CSS] 박스 모델과 레이아웃 - margin, padding, display, float까지"
 date = 2026-07-26T10:00:00+09:00
 draft = false
-tags = ["HTML", "CSS", "박스모델", "레이아웃"]
+tags = ["HTML", "CSS", "레이아웃"]
 categories = ["dev"]
 math = false
 +++

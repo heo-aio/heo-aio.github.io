@@ -2,7 +2,7 @@
 title = "[HTML/CSS] 웹사이트의 정보와 디자인, 기초부터 정리"
 date = 2026-07-25
 draft = false
-tags = ["HTML", "CSS", "웹개발", "프론트엔드"]
+tags = ["HTML", "CSS"]
 categories = ["dev"]
 math = false
 +++

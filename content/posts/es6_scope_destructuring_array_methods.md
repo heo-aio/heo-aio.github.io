@@ -2,7 +2,7 @@
 title = "[JavaScript] ES6 핵심 문법 정리 - 스코프 체인, 구조분해, spread/rest, 배열 고차함수까지"
 date = 2026-08-06T10:00:00+09:00
 draft = false
-tags = ["JavaScript", "ES6", "스코프체인", "구조분해할당", "배열메서드"]
+tags = ["JavaScript", "ES6"]
 categories = ["dev"]
 math = false
 +++

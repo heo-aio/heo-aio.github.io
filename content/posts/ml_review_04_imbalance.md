@@ -2,7 +2,7 @@
 title = "[ML 복습] 데이터 불균형 처리 — 언더샘플링과 오버샘플링(SMOTE)"
 date = 2026-07-22T16:00:00+09:00
 draft = false
-tags = ["Python", "Machine Learning", "imbalanced-learn", "SMOTE", "데이터전처리", "복습"]
+tags = ["Python", "Machine Learning", "Data Preprocessing"]
 categories = ["ml"]
 +++
 

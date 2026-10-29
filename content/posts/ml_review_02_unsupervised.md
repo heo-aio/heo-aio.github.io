@@ -2,7 +2,7 @@
 title = "[ML 복습] 비지도학습 — 클러스터링과 차원 축소"
 date = 2026-07-22T12:00:00+09:00
 draft = false
-tags = ["Python", "Machine Learning", "Scikit-learn", "비지도학습", "클러스터링", "복습"]
+tags = ["Python", "Machine Learning", "Scikit-learn"]
 categories = ["ml"]
 math = true
 +++

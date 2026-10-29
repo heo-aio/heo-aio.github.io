@@ -2,7 +2,7 @@
 title = "[ML] 다중공선성과 특이값 분해(SVD)을 이해해보자..."
 date = 2026-07-01T15:30:00+09:00
 draft = false
-tags = ["Machine Learning", "Linear Algebra", "SVD", "PCA", "Python"]
+tags = ["Machine Learning", "Linear Algebra", "Python"]
 categories = ["ml"]
 math = true
 +++
